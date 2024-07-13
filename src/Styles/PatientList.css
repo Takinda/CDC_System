@@ -1,0 +1,96 @@
+.Main{
+    width: 1440px;
+    height: 930px;
+}
+.PageHeader{
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    color: white;
+    align-items: center
+}
+.PageHeader img{
+    width: 250px;
+}
+.Search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 20px 600px 20px 100px;
+}
+
+.Search input{
+    padding-left: 20px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+}
+.Search .Dname{
+    height: 50px;
+    width: 320px;
+    border-radius: 25px;
+}
+.Search .Sbar{
+    height: 50px;
+    width: 220px;
+    border-radius: 25px;
+}
+.Sicon{
+position: relative;
+}
+#icon{
+position: absolute;
+left: 54%;
+}
+
+.ListContainer{
+    background-color: #E1F4F4;
+    border: solid 2px black;
+    margin-top: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.ListTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    height: 50px;
+    padding: 20px 640px 20px 20px;
+    background-color: #14DADA;
+    overflow: hidden;
+    border-bottom: solid 1px black;
+}
+.ListRoom{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    overflow-y: auto;
+}
+.ListRoom div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    height: 50px;
+    padding: 20px 20px;
+    border-bottom: solid 1px black;
+}
+.ListRoom div:hover{
+    background-color: #d3e4e4;
+}
+.ListRoom div button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #19C491;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.ListRoom div button:hover{
+    background-color: #128b67;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.DropdownContent{
+    position: absolute;
+}
+.roles{
+    margin-top: 10px;
+    
+}
+.roles li{
+    background-color: #C5C5C5;
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 180px;
+}
+.roles li:hover{
+    background-color: #7c7c7c;
+}
+.role-item.doctor{
+    border-radius: 10px 10px 0 0 ;
+}
+.role-item.reception {
+    border-radius: 0 0 10px 10px;
+}

@@ -1,0 +1,148 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+  }
+  
+  .Header {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color: white;
+    font-size: 32px;
+    padding: 120px 40px;
+  }
+  
+  .Header img {
+    width: 350px;
+    height: 200px;
+    margin-left: 600px;
+  }
+  
+  .Body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    padding: 0 50px;
+  }
+  
+  .Options {
+    display: contents;
+  }
+  
+  .Options div {
+    background-color: #E1F4F4;
+    height: 180px;
+    border-radius: 15px;
+    font-size: 40px;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .Options h2, .Options img {
+    margin: 20px 0 0 20px;
+  }
+  
+  .Options img {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 90px;
+    height: 90px;
+  }
+  
+  .Options div button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+    border-radius: 0 0 15px 15px;
+    background-color: #14DADA;
+    height: 60px;
+    font-size: 36px;
+    color: white;
+    width: 100%;
+  }
+  
+  .Options div button:hover {
+    cursor: pointer;
+    background-color: #12b9b9;
+  }
+  
+  .Receptionist {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .Doctor {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .Pharmacist {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .DrugStore {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .AdminHeader {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 24px;
+    height: 1px;
+  }
+  
+  .Admin {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #E1F4F4;
+    border-radius: 15px;
+    font-size: 48px;
+    height: 240px;
+  }
+  .Links{
+    color: white;
+  }
+  .Admin div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+  }
+  
+  .Admin div button {
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 28px;
+    background-color: #14DADA;
+  }
+  
+  .Admin div button:hover {
+    cursor: pointer;
+    background-color: #12b9b9;
+  }
+  
