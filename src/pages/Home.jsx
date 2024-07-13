@@ -11,33 +11,35 @@ import imgStats from '../Assets/images/Stats.png'
 import '../Styles/Home.css'
 
 function Home() {
+    
   return (
     <div>
         <div className='Header'>
             <h1 className='NamePage'>Chronic Diseases Clinic</h1>
-            <img src={imgHome} alt=""/>
+            <img src={imgHome} alt="Home"/>
         </div>
+        <h2>Hello</h2>
         <div className='Body'>
             <div className='Options'>
                 <div className="Receptionist">
                     <h2>Receptionist</h2>
-                    <img src={imgReceptionist} alt=""/>
+                    <img src={imgReceptionist} alt="Receptionist"/>
                     <button>More Info +</button>
                 </div>
                 <div className="Doctor">
                     <h2>Doctor</h2>
-                    <img src={imgDoctor} alt="" />
+                    <img src={imgDoctor} alt="Docpic" />
                     <button><Link to="/PatientList" className='Links'>More Info +</Link></button>
                 </div>
                 <br />
                 <div className="Pharmacist">
                     <h2>Pharmacist</h2>
-                    <img src={imgPharmacist} alt="" />
+                    <img src={imgPharmacist} alt="PharmPic" />
                     <button>More Info +</button>
                 </div>
                 <div className="DrugStore">
                     <h2>Drug Store</h2>
-                    <img src={imgDrugStore} alt="" />
+                    <img src={imgDrugStore} alt="DrugStorePic" />
                     <button>More Info +</button>
                 </div>
             </div>
@@ -46,15 +48,15 @@ function Home() {
             </div>
             <div className='Admin'>
                 <div className="Statistics">
-                    <img src={imgStats} alt="" />
+                    <img src={imgStats} alt="Stats" />
                     <button>More Info +</button>
                 </div>
                 <div className="Record">
-                <img src={imgRecord} alt="" />
+                <img src={imgRecord} alt="Record" />
                 <button>More Info +</button>
                 </div>
                 <div className="Reports">
-                <img src={imgReport} alt="" />
+                <img src={imgReport} alt="Reports" />
                 <button>More Info +</button>
                 </div>
             </div>
