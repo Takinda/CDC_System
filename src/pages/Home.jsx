@@ -18,7 +18,6 @@ function Home() {
             <h1 className='NamePage'>Chronic Diseases Clinic</h1>
             <img src={imgHome} alt="Home"/>
         </div>
-        <h2>Hello</h2>
         <div className='Body'>
             <div className='Options'>
                 <div className="Receptionist">
