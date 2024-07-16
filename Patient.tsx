@@ -7,10 +7,10 @@ import SendImg from '../image/Send.png';
 import PrintImg from '../image/Print.png';
 
 const Patient: React.FC = () => {
-    const [patientName, setPatientName] = useState('');
+    const [patientName, setPatientName] = useState('Fatima');
     const [activeButton, setActiveButton] = useState('');
-    const [selectedGender, setSelectedGender] = useState('');
-    const [subscriptionStatus, setSubscriptionStatus] = useState('');
+    const [selectedGender, setSelectedGender] = useState('female'); // تم تعيين القيمة الافتراضية إلى 'female'
+    const [subscriptionStatus, setSubscriptionStatus] = useState('active'); // تم تعيين القيمة الافتراضية إلى 'active'
 
     const handlePersonalPhotoClick = () => {
         alert('Change personal photo functionality goes here');
@@ -70,11 +70,11 @@ const Patient: React.FC = () => {
                 <div className="action-details">
                     <div className="info-section">
                         <h2>Name:</h2>
-                        <input type="text" className="input-field" placeholder="Enter your name" />
+                        <input type="text" className="input-field" value={patientName} readOnly />
                     </div>
                     <div className="info-section">
                         <h2>Age:</h2>
-                        <input type="text" className="input-field" placeholder="MM/DD/YYYY" />
+                        <input type="text" className="input-field" value="1/2/2000" readOnly />
                     </div>
                     <div className="info-section">
                         <h2>Gender:</h2>
@@ -97,15 +97,15 @@ const Patient: React.FC = () => {
                     </div>
                     <div className="info-section">
                         <h2>Address:</h2>
-                        <input type="text" className="input-field" placeholder="Enter your address" />
+                        <input type="text" className="input-field" value="Baghdad" readOnly />
                     </div>
                     <div className="info-section">
                         <h2>Email:</h2>
-                        <input type="email" className="input-field" placeholder="Enter your email" />
+                        <input type="email" className="input-field" value="Fatima04@gmail.com" readOnly />
                     </div>
                     <div className="info-section">
                         <h2>Phone Number:</h2>
-                        <input type="text" className="input-field" placeholder="Enter your phone number" />
+                        <input type="text" className="input-field" value="077088054" readOnly />
                     </div>
                     <div className="info-section">
                         <h2>Subscription Status:</h2>
@@ -131,9 +131,52 @@ const Patient: React.FC = () => {
             {activeButton === 'prescriptions' && (
                 <div className="action-details">
                     <div className="prescription-section">
-                        <h2>Name</h2>
-                        <h2 style={{ marginLeft: 'auto' }}>Date</h2>
-                        <hr />
+                        <table className="prescription-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Prescriptions_1</td>
+                                    <td>1/2/2024 4:10 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Prescriptions_2</td>
+                                    <td>2/5/2024 5:50 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Prescriptions_3</td>
+                                    <td>4/9/2024 4:60 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Prescriptions_4</td>
+                                    <td>4/9/2024 4:60 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Prescriptions_5</td>
+                                    <td>4/9/2024 4:60 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Prescriptions_6</td>
+                                    <td>4/9/2024 4:60 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Prescriptions_7</td>
+                                    <td>4/9/2024 4:60 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Prescriptions_8</td>
+                                    <td>4/9/2024 4:60 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Prescriptions_9</td>
+                                    <td>4/9/2024 4:60 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             )}

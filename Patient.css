@@ -45,7 +45,7 @@ body {
 .personal-photo {
   margin-right: 20px;
   margin-left: 20px;
-  width: 80px;
+  width: 150px;
   height: auto;
   cursor: pointer;
   border-radius: 50%;
@@ -195,4 +195,47 @@ body {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+
+.prescription-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 16px;
+  overflow: hidden; /* لتأثير الزوايا الدائرية */
+}
+
+.prescription-table th,
+.prescription-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.prescription-table th {
+  background-color: #0d7e9772;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.prescription-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.prescription-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.prescription-table td {
+  background-color: #dfffff; /* لون الخلفية الافتراضي */
+}
+
+.prescription-table tr:hover td {
+  background-color: #e8e5e5; /* لون الخلفية عند التمرير */
+}
+
+/* إضافة ظل للجدول */
+.prescription-table {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
