@@ -202,7 +202,7 @@ body {
   border-collapse: collapse;
   margin-top: 10px;
   border-radius: 16px;
-  overflow: hidden; /* لتأثير الزوايا الدائرية */
+  overflow: hidden;
 }
 
 .prescription-table th,
@@ -228,14 +228,25 @@ body {
 }
 
 .prescription-table td {
-  background-color: #dfffff; /* لون الخلفية الافتراضي */
+  background-color: #dfffff;
 }
 
 .prescription-table tr:hover td {
-  background-color: #e8e5e5; /* لون الخلفية عند التمرير */
+  background-color: #e8e5e5;
 }
 
 /* إضافة ظل للجدول */
 .prescription-table {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* تخصيص نمط لحقل الملاحظات */
+.textarea-field {
+  width: calc(100% - 220px);
+  border-radius: 18px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #000;
+  resize: vertical; /* يسمح بتغيير حجم الحقل عمودياً */
 }

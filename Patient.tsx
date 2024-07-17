@@ -9,8 +9,8 @@ import PrintImg from '../image/Print.png';
 const Patient: React.FC = () => {
     const [patientName, setPatientName] = useState('Fatima');
     const [activeButton, setActiveButton] = useState('');
-    const [selectedGender, setSelectedGender] = useState('female'); // تم تعيين القيمة الافتراضية إلى 'female'
-    const [subscriptionStatus, setSubscriptionStatus] = useState('active'); // تم تعيين القيمة الافتراضية إلى 'active'
+    const [selectedGender, setSelectedGender] = useState('female');
+    const [subscriptionStatus, setSubscriptionStatus] = useState('active');
 
     const handlePersonalPhotoClick = () => {
         alert('Change personal photo functionality goes here');
@@ -56,7 +56,7 @@ const Patient: React.FC = () => {
                 </div>
             </div>
             <div className="action-buttons">
-                {['personal-info', 'prescriptions', 'add-prescription'].map((action) => (
+                {['personal-info', 'prescriptions', 'add-prescription', 'dispensing-prescription'].map((action) => (
                     <button
                         key={action}
                         className={`action-button ${activeButton === action ? 'active' : ''}`}
@@ -175,6 +175,7 @@ const Patient: React.FC = () => {
                                     <td>Prescriptions_9</td>
                                     <td>4/9/2024 4:60 PM</td>
                                 </tr>
+                                {/* Add more rows as needed */}
                             </tbody>
                         </table>
                     </div>
@@ -183,8 +184,8 @@ const Patient: React.FC = () => {
             {activeButton === 'add-prescription' && (
                 <div className="action-details">
                     <div className="info-section">
-                        <h2>Patient Name:</h2>
-                        <input type="text" className="input-field" placeholder="Enter patient's name" />
+                        <h2>Doctor:</h2>
+                        <input type="text" className="input-field" placeholder="Enter doctor's name" />
                     </div>
                     <div className="info-section">
                         <h2>Date:</h2>
@@ -198,10 +199,6 @@ const Patient: React.FC = () => {
                         <h2>Notes:</h2>
                         <textarea className="input-field" rows={5} placeholder="Enter notes"></textarea>
                     </div>
-                    <div className="info-section">
-                        <h2>Doctor Name:</h2>
-                        <input type="text" className="input-field" placeholder="Enter doctor's name" />
-                    </div>
                     <div className="action-buttons-right">
                         <button className="action-button-right" onClick={handleSaveClick}>
                             <img src={SaveImg} alt="Save" className="action-icon" />
@@ -214,6 +211,32 @@ const Patient: React.FC = () => {
                         <button className="action-button-right" onClick={handlePrintClick}>
                             <img src={PrintImg} alt="Print" className="action-icon" />
                             <span>Print</span>
+                        </button>
+                    </div>
+                </div>
+            )}
+            {activeButton === 'dispensing-prescription' && (
+                <div className="action-details">
+                    <div className="info-section">
+                        <h2>Pharmacist:</h2>
+                        <input type="text" className="input-field" placeholder="Enter Pharmacist's name" />
+                    </div>
+                    <div className="info-section">
+                        <h2>Medication:</h2>
+                        <input type="text" className="input-field" placeholder="Enter medication name" />
+                    </div>
+                    <div className="info-section">
+                        <h2>Notes:</h2>
+                        <textarea className="input-field" rows={5} placeholder="Enter notes"></textarea>
+                    </div>
+                    <div className="action-buttons-right">
+                        <button className="action-button-right" onClick={handlePrintClick}>
+                            <img src={PrintImg} alt="Print" className="action-icon" />
+                            <span>Print</span>
+                        </button>
+                        <button className="action-button-right" onClick={handleSaveClick}>
+                            <img src={SaveImg} alt="Save" className="action-icon" />
+                            <span>Save</span>
                         </button>
                     </div>
                 </div>
