@@ -1,87 +1,113 @@
-.Main{
-    width: 1440px;
-    height: 930px;
-}
-.PageHeader{
+.Main {
+    background-color: #25A2BE;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto;
+  }
+  
+  .PageHeader {
+    grid-row: 1;
+    grid-column: span 2;
     display: flex;
     justify-content: space-between;
     font-size: 32px;
+    height: 200px;
     color: white;
-    align-items: center
-}
-.PageHeader img{
-    width: 250px;
-}
-.Search{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
+    overflow: hidden;
+  }
+  
+  .PageHeader img {
+    width: 200px;
+  }
+  
+  .Search {
+    grid-row: 2;
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  
+  .Rooms {
+    margin-right: 50px;
+  }
+  
+  .Search input {
+    width: 320px;
     height: 50px;
-    padding: 20px 600px 20px 100px;
-}
-
-.Search input{
-    padding-left: 20px;
-    font-size: 24px;
+    border-radius: 25px;
     border: none;
     outline: none;
-}
-.Search .Dname{
-    height: 50px;
-    width: 320px;
-    border-radius: 25px;
-}
-.Search .Sbar{
-    height: 50px;
-    width: 220px;
-    border-radius: 25px;
-}
-.Sicon{
-position: relative;
-}
-#icon{
-position: absolute;
-left: 54%;
-}
-
-.ListContainer{
+    text-indent: 20px;
+    font-size: 24px;
+  }
+  
+  .Search .Sbar {
+    margin-right: 49%;
+  }
+  
+  #icon4 {
+    position: absolute;
+    right: 940px;
+  }
+  
+  .Sicon {
+    position: relative;
+  }
+  
+  .ListContainer {
+    grid-row: 3;
+    grid-column: span 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #E1F4F4;
+    border-radius: 25px;
+    height: 600px;
     border: solid 2px black;
-    margin-top: 15px;
-    border-radius: 15px;
-    overflow: hidden;
-}
-.ListTitle{
+  }
+  
+  .ListTitle {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 30px;
-    height: 50px;
-    padding: 20px 640px 20px 20px;
     background-color: #14DADA;
-    overflow: hidden;
-    border-bottom: solid 1px black;
-}
-.ListRoom{
-    display: flex;
-    flex-direction: column;
-    height: 600px;
+    width: 95%;
+    height: 60px;
+    border-radius: 25px 25px 0 0;
+    padding: 0 46px;
+    font-size: 30px;
+    border-bottom: solid 2px black;
+    margin: 0 auto;
+  }
+  
+  .ListRoom {
+    flex: 1;
     overflow-y: auto;
-}
-.ListRoom div{
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .ListRoom .PatientN1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
     height: 50px;
-    padding: 20px 20px;
+    padding: 0 10px;
     border-bottom: solid 1px black;
-}
-.ListRoom div:hover{
-    background-color: #d3e4e4;
-}
-.ListRoom div button {
+    width: 98.9%;
+  }
+  
+  .ListRoom .PatientN1 button {
     width: 100px;
     height: 30px;
     border: none;
@@ -89,8 +115,10 @@ left: 54%;
     color: white;
     border-radius: 10px;
     font-size: 20px;
-}
-.ListRoom div button:hover{
+  }
+  
+  .ListRoom .PatientN1 button:hover {
     background-color: #128b67;
     cursor: pointer;
-}
+  }
+  

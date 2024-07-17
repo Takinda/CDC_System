@@ -13,12 +13,13 @@ function PatientList() {
       <div className="Search">
         <input className='Dname' type="text" name="" id="" placeholder="Doctor's Name"/>
         <input className='Sbar' type="text" name="" id="" placeholder='Search'/>
-        <CiSearch className='Sicon' id='icon' size={30}/>
+        <CiSearch className='Sicon' id='icon4' size={30}/>
       </div>
       <div className="ListContainer">
         <div className="ListTitle">
           <p>Patients</p>
           <p className='Rooms'>Room No.</p>
+          <br />
         </div>
         <div className="ListRoom">
           <div className="PatientN1">
@@ -27,7 +28,6 @@ function PatientList() {
             <button>Approve</button>
           </div>
         </div>
-        
       </div>
     </div>
   )

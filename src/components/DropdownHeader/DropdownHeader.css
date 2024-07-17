@@ -4,6 +4,7 @@
     background-color: red;
     border-radius: 12px;
 }
+
 .role-header{
     cursor: pointer;
     width: 100%;
@@ -14,10 +15,11 @@
 }
 .role-box .icon{
     position: absolute;
-    left: 80%;
-    bottom: 27px;
+    bottom: 25px;
+    left: 180px;
     cursor: pointer;
 }
-.role-box #icon{
+#icon{
     position: relative;
 }
+

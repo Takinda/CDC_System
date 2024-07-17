@@ -4,7 +4,8 @@ import DropdownHeader from '../components/DropdownHeader/DropdownHeader'
 
 function AddUser() {
   return (
-    <div className='container'>
+    <div className="Adduserbackground">
+      <div className='container'>
       <form action='' >
         <h1>ADD USER</h1>
         <div className="input-box">
@@ -21,6 +22,7 @@ function AddUser() {
           <button type='submit' >ADD</button>
         </div>
       </form>
+    </div>
     </div>
   )
 }
