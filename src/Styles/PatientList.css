@@ -53,16 +53,14 @@
   .Search .Sbar {
     margin-right: 49%;
   }
-  
-  #icon4 {
-    position: absolute;
-    right: 940px;
-  }
-  
   .Sicon {
     position: relative;
   }
   
+  #icon4 {
+    position: absolute;
+    right: 50%;
+  }
   .ListContainer {
     grid-row: 3;
     grid-column: span 2;

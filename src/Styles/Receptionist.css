@@ -1,0 +1,78 @@
+.RecContainer{
+    background-color: #87D3E4;
+    height: 100vh;
+}
+.RecHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 64px;
+    padding: 25px 10%;
+    color: white;
+}
+.RecHeader img{
+    width: 300px;
+    height: 230px;
+}
+.RecBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 0 10%;
+}
+.RecBody img {
+    width: 180px;
+}
+.RecBody div{
+    background-color: #E1F4F4;
+    width: 510px;
+    height: 280px;
+    border-radius:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px #25A2BE;
+}
+.RecBody div button{
+    background-color: #14DADA;
+    color: rgb(0, 0, 0);
+    width: 510px;
+    height: 75px;
+    border-radius: 0 0 25px 25px;
+    border: none;
+    font-size: 30px;
+    margin-top: 25px;
+}
+.RecBody div button:hover{
+    background-color: #25A2BE;
+    cursor: pointer;
+}
+.upper-right{
+    grid-column: 3;
+}
+.down-right{
+    grid-column: 3;
+}
+#upper-left{
+    padding: 20px 180px;
+}
+#upper-right{
+    padding: 20px 160px;
+}
+#down-left{
+    padding: 20px 204px;
+}
+#down-right{
+    padding: 20px 180px;
+}
+.Links3 {
+    color: black;
+    border-radius: 0 0 20px 20px;
+  }
+  .Links3:hover{
+    cursor: pointer;
+  }

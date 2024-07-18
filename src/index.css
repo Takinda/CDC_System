@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Links {
+  color: white;
+}
+.Links:hover{
+  cursor: pointer;
+}
+.Links2 {
+  color: white;
+  padding: 2% 37%;
+  
+  border-radius: 0 0 20px 20px;
+}
+.Links2:hover{
+  cursor: pointer;
+}
+

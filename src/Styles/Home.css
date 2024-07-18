@@ -5,13 +5,14 @@
   padding: 0;
   cursor: default;
 }
+
 .container2 {
-  background-color: #25A2BE;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
   gap: 10px; 
   padding: 0 40px 10px 40px;
+  background-color: #25A2BE;
 }
 .container2 button:hover {
   background-color: #1e859c;
@@ -22,17 +23,17 @@
   align-items: center;
   justify-content: space-between; 
   padding: 0 40px 10px 40px; 
-  font-size: 50px;
+  font-size: 36px;
   color: white;
 }
 .Header img {
-  width: 394px;
-  height: 222px;
+  width: 334px;
+  height: 191px;
 }
 .Body {
   display: grid;
-  gap: 22px 15%;
-  padding-left: 12%;
+  gap: 20px 15%;
+  padding: 0 0 0 20%;
 }
 .Body div.Doctor,.DrugStore,.Pharmacist,.Receptionist,.Admin {
   background-color: #E1F4F4;
@@ -76,9 +77,7 @@
   cursor: pointer;
   align-self: flex-end; 
 }
-.Options .Links {
-  color: white;
-}
+
 .Options .Receptionist img {
   width: 174px;
   height: 130px;
@@ -102,7 +101,7 @@
   grid-row: 4;
   grid-column: span 2;
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
   color: white;
 }
 .Admin {

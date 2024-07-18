@@ -1,0 +1,79 @@
+.HealthContainer{
+    background-color: #E1F4F4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.HealthHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    align-items: center;
+    font-size: 64px;
+    padding: 25px 10%;
+    color: rgb(0, 0, 0);
+}
+.HealthHeader p{
+    font-weight: 600;
+}
+.HealthBody{
+    width: 1200px;
+    height: 700px;
+}
+.ListDiseases{
+    background-color: #D1F3FA;
+    border: solid 1px #d3d3d3;
+    width: 1200px;
+    height: 700px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow-y: auto;
+}
+.ListDHeader{
+    grid-column: span 2;
+    grid-row: 1;
+    height: 70px;
+    background-color: #BAEBF2;
+    border-bottom: #d3d3d3 1px solid;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    font-size: 40px;
+    padding-left: 20px;
+    align-items: center;
+}
+.ListDHeader p{
+    font-weight: 600;
+}
+.ListDContent{
+    grid-row: 2;
+    grid-column: 2 span;
+    width: 1200px;
+    height: 629px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.Disease1{
+    width: 1200px;
+    grid-row: 1;
+    grid-column: 2 span;
+    display: flex;
+    flex-direction: row;
+    gap: 23%;
+    font-size: 30px;
+    align-items: center;
+    padding-left: 20px;
+    color: black;
+    height: 70px;
+    overflow: hidden;
+    border-bottom: #d3d3d3 1px solid;
+}

@@ -24,14 +24,14 @@ function Home() {
               <h2>Receptionist</h2>
               <img src={imgReceptionist} alt="Receptionist"/>
             </div>
-            <button id='btn1'>More Info +</button>
+            <button id='btn1'><Link to="/Receptionist" className='Links2'>More Info +</Link></button>
           </div>
           <div className="Doctor">
             <div className="content">
               <h2>Doctor</h2>
               <img src={imgDoctor} alt="Docpic"/>
             </div>
-            <button id='btn2'><Link to="/PatientList" className='Links'>More Info +</Link></button>
+            <button id='btn2'><Link to="/PatientList" className='Links2'>More Info +</Link></button>
           </div>
           <div className="Pharmacist">
             <div className="content">
