@@ -1,9 +1,13 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
 .invoice-container {
   width: 100%;
   height: 100vh; /* استخدام ارتفاع كامل النافذة */
   height: auto;
   background-color: #E1F4F4;
-  padding: 20px;
+  padding: 40px;
   box-sizing: border-box;
   margin: 0 auto;
   display: flex;
@@ -21,8 +25,8 @@
 }
 
 .invoice-title {
-  
-  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
   color: black;
   margin-inline-start: 100px;
 }
@@ -30,6 +34,7 @@
 .invoice-image {
   width: 100px;
   height: 100px;
+  margin-right: 100px;
 }
 
 .invoice-form {
