@@ -142,8 +142,8 @@ body {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 400px;
-  border-radius: 10px;
+  width: 350px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,8 +152,9 @@ body {
 }
 
 .close {
+  font-family: "Times New Roman", Times, serif;
   align-self: flex-end;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
   cursor: pointer;
 
@@ -165,20 +166,20 @@ body {
 }
 
 .new-disease-input {
-  width: 100%;
+  width: 70%;
   padding: 10px;
   margin-top: 20px;
   font-size: 18px;
-  
+  border-radius: 16px;
 }
 
 .modal-add-button {
   margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 10px 50px;
+  font-size: 20px;
   cursor: pointer;
   background-color: #BAEBF2;
   border: none;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 
