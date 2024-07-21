@@ -1,6 +1,8 @@
 import React from 'react'
 import '../Styles/HealthSer.css'
 import HealthServicesimg from '../Assets/images/HealthServices.png'
+import AddNote from '../Assets/images/AddNote.png'
+import Remove from '../Assets/images/Remove.png'
 
 function HealthSer() {
   return (
@@ -19,6 +21,10 @@ function HealthSer() {
                     <div className="Disease1">
                         <p>Diabetes</p>
                         <p>Blood sugar disorder</p>
+                        <div className="images">
+                            <img src={AddNote} alt="Add" />
+                            <img src={Remove} alt="Remove" />
+                        </div>
                     </div>
                 </div>
             </div>
