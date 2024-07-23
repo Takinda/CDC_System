@@ -1,6 +1,6 @@
 import React from 'react'
-import '../Styles/Invoices.css'
-import Invoiceimg from '../Assets/images/Invoiceimg.png'
+import './Invoices.css'
+import Invoiceimg from '../../Assets/images/Invoiceimg.png'
 
 function Invoices() {
   return (

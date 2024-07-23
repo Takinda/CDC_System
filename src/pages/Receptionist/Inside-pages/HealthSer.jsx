@@ -1,8 +1,8 @@
 import React from 'react'
-import '../Styles/HealthSer.css'
-import HealthServicesimg from '../Assets/images/HealthServices.png'
-import AddNote from '../Assets/images/AddNote.png'
-import Remove from '../Assets/images/Remove.png'
+import './HealthSer.css'
+import HealthServicesimg from '../../../Assets/images/HealthServices.png'
+import AddNote from '../../../Assets/images/AddNote.png'
+import Remove from '../../../Assets/images/Remove.png'
 
 function HealthSer() {
   return (

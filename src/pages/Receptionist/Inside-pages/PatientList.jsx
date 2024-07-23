@@ -1,6 +1,6 @@
 import React from 'react'
-import Waiting from '../Assets/images/Waiting.png';
-import '../Styles/PatientList.css';
+import Waiting from '../../../Assets/images/Waiting.png';
+import './PatientList.css';
 import { CiSearch } from "react-icons/ci";
 
 function PatientList() {

@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import Login from './pages/Login';
-import AddUsers from './pages/AddUser';
-import MainPage from './pages/Home';
-import PatientList from './pages/PatientList';
-import Receptionist from './pages/Receptionist';
-import HealthSer from './pages/HealthSer';
-import Invoices from './pages/Invoices';
-import AddInvoice from './pages/AddInvoice';
+import Login from './pages/Login/Login';
+import AddUsers from './pages/AddUser/AddUser';
+import MainPage from './pages/Home/Home';
+import PatientList from './pages/Receptionist/Inside-pages/PatientList';
+import Receptionist from './pages/Receptionist/Receptionist';
+import HealthSer from './pages/Receptionist/Inside-pages/HealthSer';
+import Invoices from './pages/Invoices/Invoices';
+import Pharmacy from './pages/Pharmcy/Pharmcy'
+import PaitentList_R from './pages/Receptionist/Inside-pages/AddedPatients'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -25,7 +26,8 @@ function App() {
           <Route path='/Receptionist' element={<Receptionist />} />
           <Route path='/HealthServices' element={<HealthSer />} />
           <Route path='/Invoices' element={<Invoices />} />
-          <Route path='/AddInvoice' element={<AddInvoice />} />
+          <Route path='/Pharmacy' element={<Pharmacy />} />
+          <Route path='/PaitentList_R' element={<PaitentList_R />} />
         </Routes>
       </Router>
     </div>

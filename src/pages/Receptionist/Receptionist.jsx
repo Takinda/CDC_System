@@ -1,10 +1,10 @@
 import React from 'react'
-import '../Styles/Receptionist.css'
-import imgReceptionist from '../Assets/images/Receptionist.png'
-import ListPatients from '../Assets/images/ListPatient.png'
-import HealthServices from '../Assets/images/HealthServices.png'
-import Invoices from '../Assets/images/Invoiceimg.png'
-import AddInvoice from '../Assets/images/AddInvoiceimg.png'
+import './Receptionist.css'
+import imgReceptionist from '../../Assets/images/Receptionist.png'
+import ListPatients from '../../Assets/images/ListPatient.png'
+import HealthServices from '../../Assets/images/HealthServices.png'
+import Invoices from '../../Assets/images/Invoiceimg.png'
+import AddInvoice from '../../Assets/images/AddInvoiceimg.png'
 import { Link } from 'react-router-dom'
 
 function Receptionist() {
@@ -17,7 +17,7 @@ function Receptionist() {
         <div className="RecBody">
             <div className="upper-left">
                 <img src={ListPatients} alt="" />
-                <button><Link to="/ListPatients" className='Links3' id='upper-left'>List Patients</Link></button>
+                <button><Link to="/PaitentList_R" className='Links3' id='upper-left'>List Patients</Link></button>
             </div>
             <div className="upper-right">
                 <img src={HealthServices} alt="" />

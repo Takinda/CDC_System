@@ -1,0 +1,63 @@
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+.Tcontainer{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_fixed {
+    width: 90%;
+    overflow: auto;
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+
+.header_fixed thead tr th {
+    position: sticky;
+    top: 0;
+    background-color: #B0EEEE;
+    color: #000000;
+    font-size: 24px;
+}
+th
+{
+    border-bottom: 1px solid #000000;
+    padding: 1.25%;
+    
+}
+.header_fixed table tbody td {
+    border-bottom: 1px solid #000000;
+    padding:5px 10px;
+    height: 40px;
+    font-size: 20px;
+}
+
+td label {
+   padding-left: 4%;
+   text-align: center;
+}
+
+
+td button {
+    border: none;
+    width: 30px;
+    height: 30px;background-color: transparent;
+    border-radius: 50%;
+    background-color:none;
+    color: #000000;
+    
+}
+
+td button .fa-plus {
+   height: 25px;
+   width: 25px;
+   color: black;
+}
+td button .fa-minus {
+    height: 23px;
+    width: 23px;
+    color: black;
+ }

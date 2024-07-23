@@ -1,6 +1,6 @@
 import React from 'react'
-import '../Styles/AddUser.css'
-import DropdownHeader from '../components/DropdownHeader/DropdownHeader'
+import './AddUser.css'
+import DropdownHeader from '../../components/DropdownHeader/DropdownHeader'
 
 function AddUser() {
   return (

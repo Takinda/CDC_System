@@ -1,0 +1,107 @@
+.Main-Container
+{
+background-color: #E1F4F4;
+display: flex;
+flex-direction: column;
+height: 100vh;
+box-sizing: border-box;
+overflow: hidden;
+}
+.Pharmacy-Header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 40px 20px 40px;
+
+}
+.My-Header-Title {
+	color:black; 
+	font-weight: 600;
+	font-size: 48px;
+}
+.Boxes-Container
+{
+  	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	padding: 10px 10px 10px 40% ;
+	gap: 50px;
+}
+.Search-box > i {
+	font-size: 20px;
+    background-color: white;
+	color: blue;
+}
+.Search-box > input{
+	padding: 10px;
+	height: 20px;
+	border: solid 1px black;
+	border-radius: 25px;
+	outline: none;
+	font-size: 18px;
+    background-color: white;
+	text-indent: 20px;
+}
+.AddNew-box > i {
+	font-size: 20px;
+    background-color: rgb(255, 255, 255);
+	color: blue;
+}
+.AddNew-box > button{
+	height: 40px;
+	border: solid 1px black;
+	outline: none;
+	font-size: 24px;
+	padding: 7px 50px 10px 50px;
+	border-radius: 25px;
+    background-color: white;
+	cursor: pointer;
+}
+.Add-Btn:hover{
+	background-color: rgb(235, 233, 233);
+}
+
+
+
+.Router-Container{
+	width: 100%;
+
+	height: 60px;
+	display: flex;
+	align-items: center;
+	padding-left: 40px;
+	gap: 50px;
+}
+
+.Router-Container .nav-btn
+{
+opacity: 50%;
+border-radius: 40px;
+background-color: #25A2BE;
+padding-top: 10px;
+text-align: center;
+width:300px;
+height: 40px;
+font-size: 24px;
+color: white;
+}
+.Router-Container .nav-btn:hover{
+	background-color: #218ba3;
+	cursor: pointer;
+}
+.nav-btn:focus{
+	opacity: 100%;
+}
+
+link:disabled,
+link[disabled]{
+border-radius: 40px;
+background-color: #80BECC;
+border: 1px solid;
+
+width:40%;
+font-weight: bold;
+color:white;
+}
