@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './AddInvoice.css';
-import Add from '../image/Add.png';
-import SaveIcon from '../image/Save.png';
-import PrintIcon from '../image/Print.png';
+import Add from '../Assets/images/AddInvoiceimg.png';
+import SaveIcon from '../Assets/images/Save.png';
+import PrintIcon from '../Assets/images/Print.png';
 
 const AddInvoice: React.FC = () => {
   const [diseases, setDiseases] = useState<string[]>(['Diabetes', 'Hypertension', 'Asthma', 'COPD', 'Arthritis']);

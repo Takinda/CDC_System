@@ -7,8 +7,10 @@ import PatientList from './pages/Receptionist/Inside-pages/PatientList';
 import Receptionist from './pages/Receptionist/Receptionist';
 import HealthSer from './pages/Receptionist/Inside-pages/HealthSer';
 import Invoices from './pages/Invoices/Invoices';
-import Pharmacy from './pages/Pharmcy/Pharmcy'
-import PaitentList_R from './pages/Receptionist/Inside-pages/AddedPatients'
+import AddInvoice from './AddInvoice/AddInvoice.tsx';
+import AddPatients from './AddPatient/AddPatient.tsx';
+import Pharmacy from './pages/Pharmcy/Pharmcy';
+import PaitentList_R from './pages/Receptionist/Inside-pages/AddedPatients';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -25,6 +27,8 @@ function App() {
           <Route path="/PatientList" element={<PatientList />} />
           <Route path='/Receptionist' element={<Receptionist />} />
           <Route path='/HealthServices' element={<HealthSer />} />
+          <Route path='/AddInvoice' element={<AddInvoice />} />
+          <Route path='/AddPatients' element={<AddPatients />} />
           <Route path='/Invoices' element={<Invoices />} />
           <Route path='/Pharmacy' element={<Pharmacy />} />
           <Route path='/PaitentList_R' element={<PaitentList_R />} />

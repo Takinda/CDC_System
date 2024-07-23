@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './AddPatient.css';
-import PatientImg from '../image/Patient.png';
-import PersonalPhotoImg from '../image/personalPhoto.png';
-import SaveImg from '../image/Save.png';
+import PatientImg from '../Assets/images/Patient.png';
+import PersonalPhotoImg from '../Assets/images/PersonalPhoto.png';
+import SaveImg from '../Assets/images/Save.png';
 
 const Patient: React.FC = () => {
     const [patientName, setPatientName] = useState('');
