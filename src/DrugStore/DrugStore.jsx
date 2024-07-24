@@ -1,4 +1,4 @@
-import MainImage from "../../Assets/images/DrugStoreMain.png"
+import MainImage from "../DrugStore/"
 function DrugStore()
 {
 return <>
