@@ -1,4 +1,4 @@
-import MainImage from "../DrugStore/"
+import MainImage from './'
 function DrugStore()
 {
 return <>
