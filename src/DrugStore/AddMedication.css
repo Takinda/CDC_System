@@ -15,7 +15,7 @@ font-size: 30px;
 {
     padding:0%;margin: 1%;padding: 2%; float:right; width:10%; position: absolute; right:0%; top:0%;
 }
-.form-container ,form
+form
 {
   	display: flex;
 	flex-direction: column;
@@ -27,4 +27,13 @@ font-size: 30px;
     border-radius:30px;
    width:60%;
 }
-.input-div { background-color: #B2E8F4; color: white;}
+.my-input-box {margin-top:1%; width:70%; background-color: #B2E8F4; color: white; padding-top:0.6%; padding-bottom:0.6%; border-radius:30px;}
+form label {margin:1% 1% 1% 10%;   text-align:left;  color: black; font-weight: bold; background-color:  #B2E8F4;}
+form input 
+{
+border-radius:30px;
+padding:1%;
+background-color: white;
+float: right;
+width:50%;
+}
