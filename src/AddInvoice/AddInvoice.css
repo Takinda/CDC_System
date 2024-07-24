@@ -1,185 +1,172 @@
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif; /* تعيين خط النص */
 }
 
 .invoice-container {
-  width: 100%;
+  width: 100%; /* عرض الحاوية 100% */
   height: 100vh; /* استخدام ارتفاع كامل النافذة */
   height: auto;
-  background-color: #E1F4F4;
-  padding: 40px;
-  box-sizing: border-box;
-  margin: 0 auto;
+  background-color: #E1F4F4; /* لون الخلفية */
+  padding: 40px; /* الحشوة الداخلية */
+  box-sizing: border-box; /* تحديد نموذج الصندوق */
+  margin: 0 auto; /* توسيط الحاوية */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* تنظيم العناصر في عمود */
+  align-items: center; /* محاذاة العناصر في الوسط */
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-
-  
+  justify-content: space-between; /* توزيع العناصر بين الأطراف */
+  align-items: center; /* محاذاة العناصر في الوسط */
+  width: 100%; /* عرض الرأس 100% */
 }
 
 .invoice-title {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
-  color: black;
-  margin-inline-start: 100px;
+  font-family: "Times New Roman", Times, serif; /* تعيين خط النص */
+  font-size: 40px; /* حجم الخط */
+  color: black; /* لون النص */
+  margin-inline-start: 100px; /* مسافة بادئة للعناصر الداخلية */
 }
 
 .invoice-image {
-  width: 100px;
-  height: 100px;
-  margin-right: 100px;
+  width: 100px; /* عرض الصورة */
+  height: 100px; /* ارتفاع الصورة */
+  margin-right: 100px; /* مسافة من اليمين */
 }
 
 .invoice-form {
-  
-  background-color: #B2E8F4;
-  width: 50%;
-  padding: 30px;
-  border-radius: 36px;
-  margin-top: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #B2E8F4; /* لون خلفية النموذج */
+  width: 50%; /* عرض النموذج 50% */
+  padding: 30px; /* حشوة داخلية */
+  border-radius: 36px; /* تدوير الحواف */
+  margin-top: 30px; /* مسافة علوية */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ظل النموذج */
 }
 
 .form-group {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  
+  align-items: center; /* محاذاة العناصر في الوسط */
+  margin-bottom: 20px; /* مسافة سفلية */
 }
 
 .form-group label {
-  font-size: 24px;
-  color: black;
-  width: 200px;
-  margin-right: 10px;
-  
+  font-size: 24px; /* حجم الخط */
+  color: black; /* لون النص */
+  width: 200px; /* عرض التسمية */
+  margin-right: 10px; /* مسافة من اليمين */
 }
 
 .form-group input,
 .form-group select {
-  width: 100%;
-  max-width: 400px;
-  height: 40px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 16px;
-  padding: 10px;
-  font-size: 18px;
+  width: 100%; /* عرض الحقل 100% */
+  max-width: 400px; /* العرض الأقصى للحقل */
+  height: 40px; /* ارتفاع الحقل */
+  background-color: white; /* لون الخلفية */
+  border: 1px solid black; /* لون الإطار */
+  border-radius: 16px; /* تدوير الحواف */
+  padding: 10px; /* حشوة داخلية */
+  font-size: 18px; /* حجم الخط */
 }
 
 .diseases-group {
   display: flex;
-  align-items: center;
+  align-items: center; /* محاذاة العناصر في الوسط */
 }
 
 .add-option-button {
-  margin-left: 10px;
-  padding: 5px 40px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #eae7e7;
-
-  border-radius: 16px;
+  margin-left: 10px; /* مسافة من اليسار */
+  padding: 5px 40px; /* حشوة داخلية */
+  font-size: 16px; /* حجم الخط */
+  cursor: pointer; /* مؤشر الفأرة */
+  background-color: #eae7e7; /* لون الخلفية */
+  border-radius: 16px; /* تدوير الحواف */
 }
 
 .invoice-buttons {
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-left: 410px;
-
+  justify-content: center; /* توسيط الأزرار */
+  margin-top: 30px; /* مسافة علوية */
+  margin-left: 410px; /* مسافة من اليسار */
 }
 
 .save-button, .print-button {
-  background-color: #BAEBF2;
-  width: 180px;
-  height: 50px;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
+  background-color: #BAEBF2; /* لون الخلفية */
+  width: 180px; /* عرض الزر */
+  height: 50px; /* ارتفاع الزر */
+  border: none; /* بدون إطار */
+  border-radius: 5px; /* تدوير الحواف */
+  font-size: 18px; /* حجم الخط */
+  cursor: pointer; /* مؤشر الفأرة */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 15px;
-  border-radius: 20px;
+  align-items: center; /* محاذاة العناصر في الوسط */
+  justify-content: center; /* توسيط المحتوى */
+  margin: 0 15px; /* مسافة بين الأزرار */
+  border-radius: 20px; /* تدوير الحواف */
 }
 
 .button-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+  width: 20px; /* عرض الأيقونة */
+  height: 20px; /* ارتفاع الأيقونة */
+  margin-right: 10px; /* مسافة من اليمين */
 }
 
 .save-button:hover, .print-button:hover {
-  background-color: #a2d9e2;
+  background-color: #a2d9e2; /* لون الخلفية عند التمرير */
 }
 
 .modal {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
-  
+  justify-content: center; /* توسيط النافذة المنبثقة */
+  align-items: center; /* محاذاة العناصر في الوسط */
+  position: fixed; /* تثبيت النافذة */
+  z-index: 1; /* ترتيب الطبقة */
+  left: 0; /* المسافة من اليسار */
+  top: 0; /* المسافة من الأعلى */
+  width: 100%; /* عرض النافذة */
+  height: 100%; /* ارتفاع النافذة */
+  overflow: auto; /* السماح بالتمرير */
+  background-color: rgba(0,0,0,0.4); /* لون الخلفية مع شفافية */
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 350px;
-  border-radius: 20px;
+  background-color: #fefefe; /* لون الخلفية */
+  margin: auto; /* توسيط المحتوى */
+  padding: 20px; /* حشوة داخلية */
+  border: 1px solid #888; /* إطار المحتوى */
+  width: 350px; /* عرض المحتوى */
+  border-radius: 20px; /* تدوير الحواف */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  
+  flex-direction: column; /* تنظيم العناصر في عمود */
+  align-items: center; /* محاذاة العناصر في الوسط */
 }
 
 .close {
-  font-family: "Times New Roman", Times, serif;
-  align-self: flex-end;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
-
+  font-family: "Times New Roman", Times, serif; /* تعيين خط النص */
+  align-self: flex-end; /* محاذاة الزر للنهاية */
+  font-size: 30px; /* حجم الخط */
+  font-weight: bold; /* وزن الخط */
+  cursor: pointer; /* مؤشر الفأرة */
 }
 
 .close:hover, .close:focus {
-  color: black;
-
+  color: black; /* لون النص عند التمرير والتركيز */
 }
 
 .new-disease-input {
-  width: 70%;
-  padding: 10px;
-  margin-top: 20px;
-  font-size: 18px;
-  border-radius: 16px;
+  width: 70%; /* عرض الحقل */
+  padding: 10px; /* حشوة داخلية */
+  margin-top: 20px; /* مسافة علوية */
+  font-size: 18px; /* حجم الخط */
+  border-radius: 16px; /* تدوير الحواف */
 }
 
 .modal-add-button {
-  margin-top: 20px;
-  padding: 10px 50px;
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #BAEBF2;
-  border: none;
-  border-radius: 16px;
+  margin-top: 20px; /* مسافة علوية */
+  padding: 10px 50px; /* حشوة داخلية */
+  font-size: 20px; /* حجم الخط */
+  cursor: pointer; /* مؤشر الفأرة */
+  background-color: #BAEBF2; /* لون الخلفية */
+  border: none; /* بدون إطار */
+  border-radius: 16px; /* تدوير الحواف */
 }
-

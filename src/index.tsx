@@ -1,6 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Dashboard from './Dashboard/Dashboard';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Dashboard />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+
+
+
+/*import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
 import Patient from './AddPatient/AddPatient';
 
 ReactDOM.render(
@@ -8,7 +23,7 @@ ReactDOM.render(
     <Patient />
   </React.StrictMode>,
   document.getElementById('root')
-);
+);*/
 
 
 
@@ -23,7 +38,26 @@ ReactDOM.render(
     <AddInvoice />
   </React.StrictMode>,
   document.getElementById('root')
-);*/
+);
+*/
+
+/*import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import EmployeeList from './EmployeeList/EmployeeList';
+import AddEmployee from './AddEmployee/AddEmployee';
+
+ReactDOM.render(
+  <Router>
+    <Routes>
+      <Route path="/" element={<EmployeeList />} />
+      <Route path="/add-employee" element={<AddEmployee />} />
+    </Routes>
+  </Router>,
+  document.getElementById('root')
+);
+*/
+
 
 
 
