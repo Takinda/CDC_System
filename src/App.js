@@ -3,6 +3,7 @@ import './App.css';
 import Login from './pages/Login/Login';
 import AddUsers from './pages/AddUser/AddUser';
 import MainPage from './pages/Home/Home';
+import DashBoard from './pages/DashBoard/DashBoard';
 import PatientList from './pages/Receptionist/Inside-pages/PatientList';
 import Receptionist from './pages/Receptionist/Receptionist';
 import HealthSer from './pages/Receptionist/Inside-pages/HealthSer';
@@ -32,6 +33,7 @@ function App() {
           <Route path='/Invoices' element={<Invoices />} />
           <Route path='/Pharmacy' element={<Pharmacy />} />
           <Route path='/PaitentList_R' element={<PaitentList_R />} />
+          <Route path='/DashBoard' element={<DashBoard />} />
         </Routes>
       </Router>
     </div>

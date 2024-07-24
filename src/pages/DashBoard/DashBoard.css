@@ -1,0 +1,93 @@
+.DashBoard-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E1F4F4;
+    height: 100vh;
+}
+
+.DashBoard-Title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    font-size: 64px;
+    color: rgb(0, 0, 0);
+    padding: 25px 10% 0 9%;
+}
+
+.DashBoard-Title div input {
+    width: 400px;
+    height: 50px;
+    font-size: 24px;
+    text-indent: 20px;
+    border-radius: 25px;
+    border: none;
+}
+
+.DashBoard-Title div button {
+    width: 100px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 25px;
+    margin-left: 20px;
+    border: none;
+    background-color: #25A2BE;
+    color: #F1F1F1;
+    cursor: pointer;
+}
+
+.DashBoard-Body {
+    width: 100%;
+}
+
+.DashBoard-Body table {
+    width: 80%;
+    margin: 0 9%;
+    background-color: #D1F3FA;
+    border-radius: 5px;
+    font-size: 24px;
+    border: solid 2px #d3d3d3;
+}
+
+.DashBoard-Body table thead {
+    background-color: #BAEBF2;
+}
+
+.DashBoard-Body table thead th {
+    font-weight: 500;
+    font-size: 36px;
+    border-bottom: solid 2px #d3d3d3;
+    text-indent: -72%;
+}
+
+.Table-Body-Container {
+    width: 80%;
+    margin: 0 9%;
+    height: 600px; 
+    overflow-y: auto;
+    border-radius: 0 0 25px 25px;
+    border-bottom: solid 1px #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: none;
+    overflow-x: hidden;
+}
+
+.Table-Body-Container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Table-Body-Container table tbody tr {
+    border-bottom: solid 2px #d3d3d3;
+    text-align: left;
+    text-indent: 2%;
+    height: 40px;
+}
+
+.Table-Body-Container table tbody tr:last-child td {
+    border-bottom: none;
+}

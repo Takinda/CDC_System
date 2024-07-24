@@ -9,6 +9,7 @@ import imgRecord from '../../Assets/images/Record.png'
 import imgReport from '../../Assets/images/Report.png'
 import imgStats from '../../Assets/images/Stats.png'
 import './Home.css'
+import { BiColor } from 'react-icons/bi'
 
 function Home() {
   return (
@@ -54,7 +55,7 @@ function Home() {
         <div className='Admin'>
           <div className="Statistics">
             <img src={imgStats} alt="Stats"/>
-            <button>More Info +</button>
+            <button><Link to='/DashBoard'>More Info +</Link></button>
           </div>
           <div className="Record">
             <img src={imgRecord} alt="Record"/>

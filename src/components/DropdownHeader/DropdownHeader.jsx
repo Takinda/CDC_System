@@ -20,7 +20,7 @@ function DropdownHeader() {
     <div className='dropdownHead'>
       <div className="role-box" onClick={toggleDropdown}>
         <h3 className='role-header'>{selectedRole}</h3>
-        {isOpen ? <IoIosArrowUp className='icon' id='icon' /> : <IoIosArrowDown className='icon' id='icon' />}
+        {isOpen ? <IoIosArrowUp size={30} className='icon' id='icon'/> : <IoIosArrowDown size={30} className='icon' id='icon' />}
       </div>
       {isOpen && <DropdownItems onSelectRole={handleRoleSelect} />}
     </div>
