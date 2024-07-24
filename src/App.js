@@ -11,6 +11,7 @@ import AddInvoice from './AddInvoice/AddInvoice.tsx';
 import AddPatients from './AddPatient/AddPatient.tsx';
 import Pharmacy from './pages/Pharmcy/Pharmcy';
 import PaitentList_R from './pages/Receptionist/Inside-pages/AddedPatients';
+import DrugStore from "./DrugStore/DrugStore.jsx"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -32,6 +33,7 @@ function App() {
           <Route path='/Invoices' element={<Invoices />} />
           <Route path='/Pharmacy' element={<Pharmacy />} />
           <Route path='/PaitentList_R' element={<PaitentList_R />} />
+          <Route path='/DrugStore' element={<DrugStore />} />
         </Routes>
       </Router>
     </div>
