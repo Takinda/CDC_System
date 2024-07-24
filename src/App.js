@@ -14,6 +14,7 @@ import Pharmacy from './pages/Pharmcy/Pharmcy';
 import PaitentList_R from './pages/Receptionist/Inside-pages/AddedPatients';
 import PatientInfo from './AddPatient/AddPatient.tsx'
 import DrugStore from "./DrugStore/DrugStore.jsx"
+import AddMedication from "./DrugStore/AddMedication.jsx"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/DashBoard' element={<DashBoard />} />
           <Route path='/Patient-Info' element={<PatientInfo/>} />
           <Route path='/DrugStore' element={<DrugStore />} />
+          <Route path='/AddMedication' element={<AddMedication />} />
         </Routes>
       </Router>
     </div>
