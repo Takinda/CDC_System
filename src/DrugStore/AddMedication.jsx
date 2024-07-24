@@ -4,13 +4,9 @@ function AddMedication()
 {
 return 
 <>
-<nav>
-<h1>Add Medication</h1>
-<img className="Main-Image" src={MainImage} alt="Drug Store Main Image" />
-</nav>
-
+<h1>test</h1>
 </>
 
-}
+};
 
 export default AddMedication;
