@@ -18,6 +18,8 @@ return <div className="Tcontainer">
                     <th>Quantity</th>
                 </tr>
             </thead>
+        </table>
+        <table>
             <tbody>
                {Medications.map( (med)=>  
                 ( <tr key={med.id}>

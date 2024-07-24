@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom'
 import './AddedPatients.css';
 import ListPatients from '../../../Assets/images/ListPatient.png';
 import deleteimg from '../../../Assets/images/delete.png';
@@ -8,6 +9,7 @@ import data from "../../Pharmcy/PatientData.json";
 
 function AddedPatients() {
     const [Patients, setPatients] = useState(data);
+    
     return (
         <div className='AddedPatients-Container'>
             <header className='AddedPatients-Header'>
@@ -29,7 +31,7 @@ function AddedPatients() {
                             <p>{Patient.PatientName}</p>
                             <div className="btns-List">
                                 <button>Send</button>
-                                <img src={Viewimg} alt="View" />
+                                <Link to='/Patient-Info' className='Links4'><img src={Viewimg} alt="View"  /></Link>
                                 <img src={deleteimg} alt="delete" />
                                 <img src={editimg} alt="edit" />
                             </div>

@@ -25,7 +25,7 @@ table {
 th
 {
     border-bottom: 1px solid #000000;
-    padding: 1.25%;
+    padding: 1.25%; 
     
 }
 .header_fixed table tbody td {
@@ -61,3 +61,13 @@ td button .fa-minus {
     width: 23px;
     color: black;
  }
+
+@media only screen and (min-width:992px){
+    .header_fixed table {
+        max-height: 300px;
+        overflow: auto;
+    }
+    .header_fixed table tbody{
+        overflow-y: auto;
+    }
+}

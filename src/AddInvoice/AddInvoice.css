@@ -183,3 +183,19 @@ body {
   border-radius: 16px;
 }
 
+
+@media only screen and (min-width:992px){
+  .invoice-form{
+    height: 350px;
+  }
+  .invoice-form input{
+    height: 20px;
+  }
+  .header{
+    height: 30px;
+  }
+  .invoice-buttons{
+   margin-left: 200px; 
+   margin-top: 22px;
+  }
+}

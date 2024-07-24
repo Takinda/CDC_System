@@ -58,16 +58,16 @@
     grid-column: 3;
 }
 #upper-left{
-    padding: 20px 180px;
+    padding: 0px 165px 20px 165px;
 }
 #upper-right{
-    padding: 20px 160px;
+    padding: 0px 145px 17px 145px;
 }
 #down-left{
-    padding: 20px 204px;
+    padding: 0px 185px 20px 185px;
 }
 #down-right{
-    padding: 20px 180px;
+    padding: 0px 160px 20px 160px;
 }
 .Links3 {
     color: black;
@@ -75,4 +75,29 @@
   }
   .Links3:hover{
     cursor: pointer;
+  }
+
+
+  @media only screen and (min-width:992px){
+    .RecHeader{
+        font-size: 48px;
+    }
+    .RecHeader img{
+        width: 210px;
+        height: 150px;
+    }
+    .RecBody div{
+        width: 450px;
+        height: 160px;
+    }
+    .RecBody img{
+        width: 100px;
+    }
+    .RecBody div button{
+        width: 450px;
+        font-size: 24px;
+        padding-bottom: 25px;
+        height: 40px;
+    }
+    
   }

@@ -62,9 +62,6 @@ overflow: hidden;
 .Add-Btn:hover{
 	background-color: rgb(235, 233, 233);
 }
-
-
-
 .Router-Container{
 	width: 100%;
 
@@ -104,4 +101,13 @@ border: 1px solid;
 width:40%;
 font-weight: bold;
 color:white;
+}
+@media only screen and (min-width:992px){
+    .Router-Container .nav-btn {
+		height: 30px;
+		padding: 2px;
+		width: 250px;
+		font-size: 24px;
+		text-align: center;
+    }
 }

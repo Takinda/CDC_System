@@ -14,7 +14,7 @@
 .Pcontainer .header_fixed table {
     width: 100%;
     border-collapse: collapse;
-}
+} 
 .Pcontainer .header_fixed thead th {
     position: sticky;
     top: 0;
@@ -59,4 +59,11 @@
     width: 30px;
     height: 30px;
     margin: 0;
+}
+
+
+@media only screen and (min-width:992px) {
+    .Pcontainer .tbody-container{
+        height: 300px;
+    }    
 }

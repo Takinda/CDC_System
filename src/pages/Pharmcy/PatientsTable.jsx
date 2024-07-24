@@ -12,12 +12,12 @@ function Table() {
         <div className="Pcontainer">
             <div className="header_fixed">
                 <table>
-                    <thead>
+                    <thead> 
                         <tr>
                             <th>Patient</th>
                             <th>Procedures</th>
                         </tr>
-                    </thead>
+                    </thead> 
                 </table>
                 <div className="tbody-container">
                     <table>
