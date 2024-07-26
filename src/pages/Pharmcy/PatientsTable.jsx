@@ -18,7 +18,7 @@ function Table() {
                             <th>Procedures</th>
                         </tr>
                     </thead> 
-                </table>
+                </table> 
                 <div className="tbody-container">
                     <table>
                         <tbody>

@@ -11,7 +11,7 @@ const AddInvoice: React.FC = () => {
 
   const addDiseaseOption = () => {
     if (newDisease) {
-      setDiseases([...diseases, newDisease]);
+      setDiseases([...diseases, newDisease]); 
       setNewDisease('');
       setIsModalOpen(false);
     }

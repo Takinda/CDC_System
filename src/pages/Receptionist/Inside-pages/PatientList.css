@@ -1,122 +1,198 @@
 .Main {
     background-color: #25A2BE;
-    padding-left: 25px;
-    padding-right: 25px;
     height: 100vh;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto auto;
-  }
-  
-  .PageHeader {
-    grid-row: 1;
-    grid-column: span 2;
+    width: 100%;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .PageHeader{
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    font-size: 32px;
-    height: 200px;
+    width: 80%;
+    align-items: center;
     color: white;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
   }
-  
-  .PageHeader img {
-    width: 200px;
-  }
-  
-  .Search {
-    grid-row: 2;
-    grid-column: span 2;
+  .Doctor-Welcoming{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    margin-bottom: 10px;
+    width: 80%;
+    color: white;
   }
-  
-  .Rooms {
-    margin-right: 50px;
-  }
-  
-  .Search input {
-    width: 320px;
-    height: 50px;
-    border-radius: 25px;
-    border: none;
-    outline: none;
-    text-indent: 20px;
-    font-size: 24px;
-  }
-  
-  .Search .Sbar {
-    margin-right: 49%;
-  }
-  .Sicon {
+  .Search{
+    display: flex;
     position: relative;
+    width: 80%;
+    align-items: center;
   }
-  
-  #icon4 {
+  .Sbar{
+    width: 250px;
+    text-indent: 15px;
+    border-radius: 20px;
+    border: none;
+
+    /*height: 50px;*/
+  }
+  .Sicon{
     position: absolute;
-    right: 50%;
+    left: 210px;
   }
-  .ListContainer {
-    grid-row: 3;
-    grid-column: span 2;
-    width: 100%;
+  .ListContainer{
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
+    width: 80%;
+    align-items: center;
     background-color: #E1F4F4;
     border-radius: 25px;
-    height: 600px;
-    border: solid 2px black;
+    overflow-y:auto;
   }
-  
-  .ListTitle {
+  .ListTitle{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #14DADA;
-    width: 95%;
-    height: 60px;
-    border-radius: 25px 25px 0 0;
-    padding: 0 46px;
-    font-size: 30px;
-    border-bottom: solid 2px black;
-    margin: 0 auto;
-  }
-  
-  .ListRoom {
-    flex: 1;
-    overflow-y: auto;
-    padding: 10px 0;
+    flex-direction: row;
     width: 100%;
-  }
-  
-  .ListRoom .PatientN1 {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 24px;
-    height: 50px;
-    padding: 0 10px;
-    border-bottom: solid 1px black;
-    width: 98.9%;
+    justify-content: space-between;
+    border-radius: 25px 25px 0 0;
   }
-  
-  .ListRoom .PatientN1 button {
-    width: 100px;
-    height: 30px;
+  .ListTitle p{
+    width: 150px;
+    text-align: center;
+  }
+  .ListRoom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+  }
+  .PatientN{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+  .PatientN:hover{
+    background-color: #d5e7e7;
+  }
+  .Doc-btns{
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+  }
+  .PatientN #Approve{
     border: none;
     background-color: #19C491;
-    color: white;
     border-radius: 10px;
-    font-size: 20px;
   }
+  .PatientN #Approve:hover{background-color: #16ac7f; cursor: pointer;}
   
-  .ListRoom .PatientN1 button:hover {
-    background-color: #128b67;
-    cursor: pointer;
+  .PatientN #Dismiss{
+    border: none;
+    background-color: #aa5555;
+    border-radius: 10px;
   }
-  
+  .PatientN #Dismiss:hover{background-color: #8f4444; cursor: pointer;}
+
+  /* Laptop */
+
+  @media  screen and (min-width: 992px) {
+    .PageHeader{
+      font-size: 24px;
+      padding-top: 10px;
+      padding-bottom: 1%;
+    }
+    .PageHeader img{
+      width: 150px;
+    }
+    .Doctor-Welcoming{
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    .Search{
+      height: 80px;
+    }
+    .Sbar{
+      height: 40px;
+      font-size: 20px;
+    }
+    .ListContainer{ height: 350px;}
+
+    .ListTitle{ height: 40px; font-size: 20px;}
+
+    .PatientN{ padding:5px 0; font-size: 16px;}
+    
+    .PatientN p{
+
+      width: 180px;
+      text-align: center;
+    }
+    
+    .Description{
+      text-indent: 0px;
+    }
+    .RoomN{
+      text-indent: 10px;
+    }
+    .ListRoom{ height: 309px; overflow-y: auto;}
+
+    .PatientN button{ 
+      width: 80px;
+      height: 25px; 
+      font-size: 16px;
+    }
+  }
+
+  /* Desktop */
+
+  @media  screen and (min-width: 1400px) {
+    .PageHeader{
+      font-size: 30px;
+      padding-top: 10px;
+      padding-bottom: 2%;
+    }
+    .PageHeader img{
+      width: 200px;
+    }
+
+    .Doctor-Welcoming{
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    .Search{
+      height: 80px;
+    }
+    .Sbar{
+      height: 40px;
+      font-size: 20px;
+    }
+    .ListContainer{ height: 600px;}
+
+    .ListTitle{ height: 50px; font-size: 24px;}
+
+    .PatientN{ padding:10px 0; font-size: 20px;}
+    
+    .PatientN p{
+
+      width: 180px;
+      text-align: center;
+    }
+    
+    .Description{
+      text-indent: -60px;
+    }
+    .RoomN{
+      text-indent: -80px;
+    }
+    .ListRoom{ height: 550px; overflow-y: auto;}
+
+    .PatientN button{ 
+      width: 100px;
+      height: 30px; 
+      font-size: 20px;
+    }
+
+  }

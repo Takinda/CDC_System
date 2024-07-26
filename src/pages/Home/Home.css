@@ -1,205 +1,172 @@
-* {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  cursor: default;
-}
-@media only screen and (min-width:1200px){
-  .container2 {
-    height: 99vh;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto auto auto auto;
-    gap: 10px; 
-    padding: 0 40px 10px 40px;
-    background-color: #25A2BE;
-  }
-  .container2 button:hover {
-    background-color: #1e859c;
-  }
-  .Header {
-    grid-column: span 2; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    padding: 0 40px 10px 40px; 
-    font-size: 36px;
-    color: white;
-  }
-  .Header img {
-    width: 334px;
-    height: 191px;
-  }
-  .Body {
-    display: grid;
-    grid-template-columns: repeat(2,1fr) ;
-    gap: 20px 15%;
-    padding: 0 0 0 20%;
-    
-  }
-  .Body div.Doctor,.DrugStore,.Pharmacist,.Receptionist,.Admin {
-    background-color: #E1F4F4;
-    width: 600px;
-    height: auto; 
-    border-radius: 25px;
+.container2{
     display: flex;
     flex-direction: column;
-  }
-  .Options {
-    display: contents; 
-    
-  }
-  .Options > div {
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #25A2BE;
+}
+.Header{
     display: flex;
-    flex-direction: column; 
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-size: 36px;
-    height: 100%; 
-    padding-top: 10px;
-  }
-  .Options .content {
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    height: 120px;
-    justify-content: center;
     width: 100%;
-  }
-  .Options .content img {
-    margin-right: 15px; 
-  }
-  .Options button {
-    width: 100%; 
-    height: 60px;
-    color: white;
-    font-size: 30px;
-    border: none;
-    background-color: #14DADA;
-    border-radius: 0 0 25px 25px;
-    text-align: center; 
-    cursor: pointer;
-    align-self: flex-end; 
-  }
-  
-  .Options .Receptionist img {
-    width: 174px;
-    height: 130px;
-  }
-  .Options .Doctor img {
-    width: 120px;
-    height: 105px;
-  }
-  .Options .Pharmacist img {
-    width: 107px;
-    height: 108px;
-  }
-  .Pharmacist .content{
-    margin-top: 25px;
-  }
-  .Options .DrugStore img {
-    width: 151px;
-    height: 154px;
-  }
-  .AdminHeader {
-    grid-row: 4;
-    grid-column: span 2;
-    text-align: center;
-    font-size: 24px;
-    color: white;
-  }
-  .Admin {
-    grid-row: 5;
-    grid-column: span 2;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    text-align: center;
-  }
-  .Admin > div {
-    padding: 10px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .Admin div button {
-    width: 100px;
-    height: 25px;
-    margin-top: 5px;
-    background-color: #14DADA;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .Admin div img {
-    width: 100px;
-    cursor: pointer;
-  }
+    color: white
+}
+.Columns{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* space between rows */
+}
+.Rows{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20%; /* space between columns */
+}
+.Rows div{ 
+  position: relative;
+  background-color: #E1F4F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 25px;
+}
+
+.Rows div .Links2{  width: 100%;  }
+
+.Rows div button{ 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 25px 25px;
+  background-color: #14DADA;
+  border: none; 
+}
+
+.Rows div .Links2 :hover{
+  background-color: #12c9c9;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.Rows div .content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.AdminHeader{ color: white; height: 40px; padding-top: 10px;}
+
+.Admin{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E1F4F4;
+  border-radius:25px;
+}
+.Admin div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+}
+.Admin div .Admin-btns{
+  width: 100%;
+  border-radius: 25px;
+}
+.Admin div button{
+  width: 100%;
+  border: none;
+  background-color: #14DADA;
+  border-radius: 25px;
+}
+.Admin-btns :hover{
+  background-color: #12c9c9;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 
-
-/*for Laptops*/
-@media only screen and (min-width:992px) {
+/* Laptop screens and large taplets */
+@media screen and (min-width: 992px) {
   .Header{
-    font-size: 30px;}
-  .Header img{
-    width: 200px;
-    height: 120px;}
-  .Body div.Doctor,body div.DrugStore, body .Pharmacist,body .Receptionist,body .Admin{
-    grid-column: auto;
     font-size: 24px;
-    padding:0;
-    width: 400px;
+    width: 80%;
+    padding: 10px 0 10px 0;
   }
-  .Options{
-    height: 600px;
+  .Header img{  width: 200px; }
+  .Rows div{
+    width: 330px;
+    height: 150px;
+    font-size: 18px;
   }
-  .Options .content{
-    height: 80px;
+  .Rows div button{
+    font-size: 20px;
+    height: 30px;
   }
-  .Options .Receptionist img{
-    width: 80px;
-    height: 70px;
+  /* images of each section */
+  .Receptionist img{width: 120px;}
+  .Doctor img{width: 80px;}
+  .Pharmacist img{width: 80px;}
+  .DrugStore img{width: 90px;}
+  
+  .Admin{
+    width: 60%;
+    padding: 10px 50px;
   }
-  .Options .Doctor img{
-    width: 80px;
-    height: 70px;
-  }
-  .Options .Pharmacist img{
-    width: 80px;
-    height: 80px;
-  }
-  .Options .DrugStore img{
-    width: 80px;
-    height: 80px;
-  }
-  .Options button{
-    height: 40px;
-    font-size: 21px;
-  }
-  .AdminHeader{
-    font-size: 16px;
-    height: 24px;
-    margin-right: 10%;
+  .Admin img{
+    width: 70px;
     padding-bottom: 10px;
   }
-  .Admin div img{
-    width: 50px;
+  .Admin div button{
+    font-size: 16px;
+    height: 25px;
   }
+}
+
+/* Desktops and Large Laptops */
+@media screen and (min-width: 1400px) {
+  .Header{
+    font-size: 30px;
+    width: 80%;
+    padding: 10px 0 30px 0;
+  }
+  .Header img{  width: 300px; }
+  .Rows div{
+    width: 400px;
+    height: 200px;
+    font-size: 20px;
+  }
+  .Rows div button{
+    font-size: 24px;
+    height: 40px;
+  }
+  /* images of each section */
+  .Receptionist img{width: 140px;}
+  .Doctor img{width: 120px;}
+  .Pharmacist img{width: 100px;}
+  .DrugStore img{width: 120px;}
+
   .Admin{
-    grid-column:span 2;
-    grid-row: 5;
-    width: 100%;
+    width: 56%;
+    padding: 20px 50px;
   }
-  .Body{
-    padding: 0;
-    gap: 20px 10%;
-    grid-column: span 2;
-    padding-left: 10%;
+  .Admin img{
+    width: 120px;
+    padding-bottom: 10px;
+  }
+  .Admin div button{
+    font-size: 20px;
+    height: 30px;
   }
 }

@@ -1,0 +1,23 @@
+[
+    {"id":1,"Disease":"Covid-19","Description":"Lung damage"},
+    {"id":2,"Disease":"Diabetes","Description":"Diabetes"},
+    {"id":3,"Disease":"Hypertension","Description":"Hypertension"},
+    {"id":4,"Disease":"COPD","Description":"COPD"},
+    {"id":5,"Disease":"Cancer","Description":"Cancer diabetes type 2"},
+    {"id":6,"Disease":"Cancer","Description":"Cancer"},
+    {"id":7,"Disease":"Cancer","Description":"Cancer"},
+    {"id":8,"Disease":"Cancer","Description":"Cancer"},
+    {"id":9,"Disease":"Cancer","Description":"Cancer"},
+    {"id":10,"Disease":"Cancer","Description":"Cancer"},
+    {"id":11,"Disease":"Cancer","Description":"Cancer"},
+    {"id":12,"Disease":"Cancer","Description":"Cancer"},
+    {"id":13,"Disease":"Cancer","Description":"Cancer"},
+    {"id":14,"Disease":"Cancer","Description":"Cancer"},
+    {"id":15,"Disease":"Cancer","Description":"Cancer"},
+    {"id":16,"Disease":"Cancer","Description":"Cancer"},
+    {"id":17,"Disease":"Cancer","Description":"Cancer"},
+    {"id":18,"Disease":"Cancer","Description":"Cancer"},
+    {"id":19,"Disease":"Cancer","Description":"Cancer"},
+    {"id":20,"Disease":"Cancer","Description":"Cancer"}
+    
+]

@@ -14,7 +14,7 @@ function Pharmcy()
           case 'ListPatients':
             return <ListPatients />;
           default:
-            return <MedicationsTable />;
+            return <MedicationsTable />; 
         }
     }
 
@@ -22,10 +22,10 @@ function Pharmcy()
     <div className="Main-Container">
         <div className="Pharmacy-Header">
             <h1 className="My-Header-Title">Pharmcy</h1>
-            <img src={MainImage} alt="img" className="Main-Image" />
+            <img src={MainImage} alt="img"  />
         </div>
         <div className="Router-Container">
-        <Link       
+                <Link       
                     id="nav-btn"
                     className={`nav-btn ${component === 'MedicationsTable' ? 'active' : ''}`}
                     onClick={() => setComponent('MedicationsTable')}
@@ -40,14 +40,10 @@ function Pharmcy()
                 </Link>
         </div>
         {component === 'MedicationsTable' && (
-                <div className="Boxes-Container">
-                    <div className="Search-box">
+                <div className="Boxes-Container2">
+                    <div className="Search-box2">
                         <i className="fa-search" aria-hidden="true"></i>
                         <input type="text" name="" placeholder="Search...?" />
-                    </div>
-                    <div className="AddNew-box">
-                        <i className="fa-plus" aria-hidden="true"></i>
-                        <button className="Add-Btn">Add</button>
                     </div>
                 </div>
             )}

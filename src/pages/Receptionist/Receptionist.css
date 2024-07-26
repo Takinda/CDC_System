@@ -1,103 +1,115 @@
-.RecContainer{
+.Rec-Container{
     background-color: #87D3E4;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
-.RecHeader{
+.Rec-Header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 64px;
-    padding: 25px 10%;
+    width: 80%;
     color: white;
 }
-.RecHeader img{
-    width: 300px;
-    height: 230px;
-}
-.RecBody{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    padding: 0 10%;
-}
-.RecBody img {
-    width: 180px;
-}
-.RecBody div{
-    background-color: #E1F4F4;
-    width: 510px;
-    height: 280px;
-    border-radius:25px;
+.Rec-columns{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
     align-items: center;
-    box-shadow: 0 0 2px #25A2BE;
+    justify-content: center;
+    gap: 50px; /* space between rows */
 }
-.RecBody div button{
-    background-color: #14DADA;
-    color: rgb(0, 0, 0);
-    width: 510px;
-    height: 75px;
-    border-radius: 0 0 25px 25px;
+.Rec-Rows{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20%; /* space between columns */
+}
+.Rec-Rows div{
+    position: relative;
+    background-color: #E1F4F4;
+    box-shadow: #0eabb9 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 25px;
+}
+.Links3{
+    width: 100%;
+}
+.Rec-Rows div button{
+    position: absolute;
+    bottom: 0;
+    background-color: #14d3e4;
     border: none;
-    font-size: 30px;
-    margin-top: 25px;
+    width: 100%;
+    border-radius: 0 0 25px 25px;
 }
-.RecBody div button:hover{
-    background-color: #25A2BE;
+.Rec-Rows div button:hover{
+    background-color: #14c4d4;
+    transition: 0.3s;
     cursor: pointer;
 }
-.upper-right{
-    grid-column: 3;
-}
-.down-right{
-    grid-column: 3;
-}
-#upper-left{
-    padding: 0px 165px 20px 165px;
-}
-#upper-right{
-    padding: 0px 145px 17px 145px;
-}
-#down-left{
-    padding: 0px 185px 20px 185px;
-}
-#down-right{
-    padding: 0px 160px 20px 160px;
-}
-.Links3 {
-    color: black;
-    border-radius: 0 0 20px 20px;
-  }
-  .Links3:hover{
-    cursor: pointer;
-  }
 
+/* Laptops */
 
-  @media only screen and (min-width:992px){
-    .RecHeader{
-        font-size: 48px;
+@media screen and (min-width: 992px) {
+    .Rec-Header{
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 2%;
     }
-    .RecHeader img{
-        width: 210px;
-        height: 150px;
+    .Rec-Header img{    width: 200px;   }
+
+    .Rec-columns{
+        gap: 50px;
     }
-    .RecBody div{
-        width: 450px;
-        height: 160px;
+
+    .Rec-Rows div{
+        width: 350px;
+        height: 170px;
     }
-    .RecBody img{
+    .Rec-Rows img{
         width: 100px;
+        padding-bottom: 10px;
     }
-    .RecBody div button{
-        width: 450px;
+    .Rec-Rows div button{
         font-size: 24px;
-        padding-bottom: 25px;
         height: 40px;
     }
-    
-  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1400px) {
+    .Rec-Header{
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 6%;
+    }
+    .Rec-Header img{    width: 220px;   }
+
+    .Rec-columns{
+        gap: 100px;
+    }
+
+    .Rec-Rows div{
+        width: 400px;
+        height: 200px;
+    }
+    .Rec-Rows img{
+        width: 120px;
+        padding-bottom: 10px;
+    }
+    .Rec-Rows div button{
+        font-size: 24px;
+        height: 40px;
+    }
+}

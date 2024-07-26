@@ -9,27 +9,31 @@ import { Link } from 'react-router-dom'
 
 function Receptionist() {
   return (
-    <div className='RecContainer'>
-        <div className="RecHeader">
-            <p>Receptionist</p>
+    <div className='Rec-Container'>
+        <div className="Rec-Header">
+            <h1>Receptionist</h1>
             <img src={imgReceptionist} alt="Receptionist"/>
         </div>
-        <div className="RecBody">
-            <div className="upper-left">
-                <img src={ListPatients} alt="" />
-                <button><Link to="/PaitentList_R" className='Links3' id='upper-left'>List Patients</Link></button>
+        <div className="Rec-columns">
+            <div className="Rec-Rows">
+                <div className="upper-left">
+                    <img src={ListPatients} alt="" />
+                    <Link to="/PaitentList_R" className='Links3'><button>List Patients</button></Link>
+                </div>
+                <div className="upper-right">
+                    <img src={HealthServices} alt="" />
+                    <Link to="/HealthServices" className='Links3'><button>Health Services</button></Link>
+                </div>
             </div>
-            <div className="upper-right">
-                <img src={HealthServices} alt="" />
-                <button><Link to="/HealthServices" className='Links3' id='upper-right'>Health Services</Link></button>
-            </div>
-            <div className="down-left">
-                <img src={Invoices} alt="" />
-                <button><Link to="/Invoices" className='Links3' id='down-left'>Invoices</Link></button>
-            </div>
-            <div className="down-right">
-                <img src={AddInvoice} alt="" />
-                <button><Link to="/AddInvoice" className='Links3' id='down-right'>Add Invoice</Link></button>
+            <div className="Rec-Rows">
+                <div className="down-left">
+                    <img src={Invoices} alt="" />
+                    <Link to="/Invoices" className='Links3'><button>Invoice</button></Link>
+                </div>
+                <div className="down-right">
+                    <img src={AddInvoice} alt="" />
+                    <Link to="/AddInvoice" className='Links3'><button>Add Invoice</button></Link>
+                </div>
             </div>
         </div>
     </div>

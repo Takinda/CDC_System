@@ -1,114 +1,157 @@
-.HealthContainer{
+.HealthContainer {
     background-color: #E1F4F4;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center
+    align-items: center;
 }
-.HealthHeader{
+
+.HealthHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1200px;
+    width: 80%;
     align-items: center;
-    font-size: 64px;
-    padding: 25px 10%;
     color: rgb(0, 0, 0);
 }
-.HealthHeader p{
-    font-weight: 600;
+
+.HealthBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
 }
-.HealthBody{
-    width: 1200px;
-    height: 700px;
-}
-.ListDiseases{
-    background-color: #D1F3FA;
-    border: solid 1px #d3d3d3;
-    width: 1200px;
-    height: 700px;
-    border-radius: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    overflow-y: auto;
-}
-.ListDHeader{
-    grid-column: span 2;
-    grid-row: 1;
-    height: 70px;
-    background-color: #BAEBF2;
-    border-bottom: #d3d3d3 1px solid;
-    color: black;
+
+.ListD-Header {
     display: flex;
     flex-direction: row;
-    gap: 20%;
-    font-size: 40px;
-    padding-left: 20px;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    border: 2px #d3d3d3 solid;
+    background-color: #BAEBF2;
+    border-radius:20px 20px 0 0;
 }
-.ListDHeader p{
+
+.ListD-Header p {
     font-weight: 600;
 }
-.ListDContent{
+
+.ListD-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 2px #d3d3d3 solid;
+    border-top: none;
     background-color: #D1F3FA;
-    grid-row: 2;
-    grid-column: 2 span;
-    width: 1200px;
-    height: 629px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    border-radius: 0 0 5px 20px;
+    scrollbar-width: thin;
     overflow-y: auto;
     overflow-x: hidden;
 }
-.ListDContent div:hover{
-    background-color:#c9eff7 ;
-}
-.Disease1{
-    width: 1200px;
-    grid-row: 1;
-    grid-column: 2 span;
+
+
+.Disease {
     display: flex;
     flex-direction: row;
-    gap: 23%;
-    font-size: 30px;
-    align-items: center;
-    padding-left: 20px;
-    color: black;
-    height: 70px;
-    overflow: hidden;
-    border-bottom: #d3d3d3 1px solid;
-}
-.images{
-    width: 15%;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
     justify-content: space-between;
-}
-.images img {
-    width: 45px;
-    padding: 5px;
-}
-.images img:hover{
-    width: 47px;
-    cursor: pointer;
-    transition: ease-in-out 0.2s;
-    
+    align-items: center;
+    border-bottom: 2px #d3d3d3 solid;
+    width: 100%;
+    padding: 20px;
 }
 
-@media only screen and (min-width:992px){
-    .HealthHeader{
-        font-size: 40px;
-        padding: 25px 0;
+.Disease p {
+
+    width: 20%;
+}
+
+.Disease p.description {
+    margin-right: 5%;
+    text-align: left;
+    max-width: 400px;
+    width: 40%; /* Optional: control the width if needed */
+    padding: 0 10px; /* Optional: padding to give space around text */
+
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .HealthHeader {
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 2%;
     }
-    .HealthHeader img{
+
+    .HealthHeader img {
         width: 120px;
     }
-    .HealthBody{
-        height: 400px;
+
+    .HealthBody {
+        height: 450px;
+    }
+
+    .ListD-Header {
+        height: 50px;
+        font-size: 24px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .ListD-Header div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 150px;
+    }
+    .Disease p.description {
+        margin-right: -2%;
+    }
+    .ListD-Content {
+        height: 630px;
+        padding: 0 20px 0 20px;
+        font-size: 20px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1400px) {
+    .HealthHeader {
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 2%;
+    }
+
+    .HealthHeader img {
+        width: 180px;
+    }
+
+    .HealthBody {
+        height: 700px;
+    }
+
+    .ListD-Header {
+        height: 50px;
+        font-size: 24px;
+        padding: 10px 20px 10px 20px;
+    }
+    .Disease p.description {
+        margin-right: 5%;
+    }
+    .ListD-Header div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 150px;
+    }
+
+    .ListD-Content {
+        height: 630px;
+        padding: 0 20px 0 20px;
+        font-size: 20px;
     }
 }
