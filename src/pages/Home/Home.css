@@ -1,205 +1,157 @@
-* {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  cursor: default;
+html, body {
+  margin: 0; /* إزالة الهوامش الافتراضية */
+  padding: 0; /* إزالة الحشوات الافتراضية */
+  height: 100%; /* تحديد ارتفاع 100% للصفحة */
+  background-color: #B7EBF7; /* لون خلفية الصفحة الأساسي */
 }
-@media only screen and (min-width:1200px){
-  .container2 {
-    height: 99vh;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto auto auto auto;
-    gap: 10px; 
-    padding: 0 40px 10px 40px;
-    background-color: #25A2BE;
+
+.container {
+  background-color: #B7EBF7; /* لون خلفية الحاوية */
+  display: flex; /* استخدام Flexbox لترتيب المحتوى */
+  flex-direction: column; /* ترتيب المحتوى بشكل عمودي */
+  align-items: center; /* محاذاة المحتوى إلى الوسط أفقياً */
+  padding: 2% 12%; /* حشوة داخلية بنسبة 2% أعلى وأسفل و12% يمين ويسار */
+  font-family: 'Times New Roman', Times, serif; /* نوع الخط المستخدم */
+  width: 100%; /* عرض الحاوية 100% من العرض الكلي */
+  min-height: 100vh; /* ارتفاع الحاوية ليشمل كامل النافذة */
+  box-sizing: border-box; /* تضمين الحواف والفراغات في حجم العنصر */
+}
+
+.header {
+  display: flex; /* استخدام Flexbox لترتيب العناصر الداخلية */
+  align-items: center; /* محاذاة العناصر إلى الوسط عمودياً */
+  justify-content: space-between; /* توزيع العناصر مع ترك فراغات بينهما */
+  width: 100%; /* عرض الحاوية 100% من العرض الكلي */
+}
+
+.header h1 {
+  font-size: 3.2vw; /* حجم الخط للعنوان */
+  color: black; /* لون الخط للعنوان */
+  margin: 0; /* إزالة الهامش الافتراضي */
+}
+
+.home-logo {
+  width: 10vw; /* عرض الشعار */
+  height: auto; /* ارتفاع تلقائي للحفاظ على النسبة */
+}
+
+.main-content {
+  display: flex; /* استخدام Flexbox لترتيب العناصر الداخلية */
+  justify-content: space-between; /* توزيع العناصر مع ترك فراغات بينهما */
+  width: 100%; /* عرض الحاوية 100% من العرض الكلي */
+  margin-top: 2%; /* إضافة هامش علوي */
+}
+
+.buttons-container {
+  display: grid; /* استخدام Grid لترتيب الأزرار */
+  grid-template-columns: repeat(2, 1fr); /* تكرار عمودين بنفس العرض */
+  grid-gap: 2%; /* ترك فراغات بين الأزرار */
+}
+
+.main-button {
+  width: 17vw; /* عرض الزر */
+  height: 14vw; /* ارتفاع الزر */
+  border-radius: 1vw; /* حواف دائرية للزر */
+  background-color: #E1F4F4; /* لون خلفية الزر */
+  border: 0.15vw solid #25A2BE; /* لون وحجم حافة الزر */
+  font-size: 2vw; /* حجم الخط داخل الزر */
+  color: black; /* لون الخط داخل الزر */
+  cursor: pointer; /* تغيير مؤشر الفأرة عند التمرير فوق الزر */
+}
+
+.administration-container {
+  background-color: #E1F4F4; /* لون خلفية الحاوية */
+  border: 0.15vw solid #25A2BE; /* لون وحجم حافة الحاوية */
+  width: 20vw; /* عرض الحاوية */
+  padding: 2%; /* فراغ داخلي */
+  box-sizing: border-box; /* تضمين الحواف والفراغات في حجم العنصر */
+  border-radius: 2vw; /* حواف دائرية للحاوية */
+  display: flex; /* استخدام Flexbox لترتيب العناصر الداخلية */
+  flex-direction: column; /* ترتيب العناصر بشكل عمودي */
+  align-items: center; /* محاذاة العناصر إلى الوسط أفقياً */
+}
+
+.administration-container h2 {
+  font-size: 2.5vw; /* حجم الخط للعنوان */
+  color: black; /* لون الخط للعنوان */
+  margin-top: 5%; /* إضافة هامش علوي */
+  margin-bottom: 15%; /* إضافة هامش سفلي */
+}
+
+.admin-button {
+  width: 13vw; /* عرض الزر */
+  height: 4vw; /* ارتفاع الزر */
+  border-radius: 1.2vw; /* حواف دائرية للزر */
+  background-color: #14B6DA; /* لون خلفية الزر */
+  color: white; /* لون الخط داخل الزر */
+  font-size: 1.8vw; /* حجم الخط داخل الزر */
+  border: none; /* إزالة الحواف الافتراضية */
+  margin-bottom: 5%; /* إضافة هامش سفلي */
+  cursor: pointer; /* تغيير مؤشر الفأرة عند التمرير فوق الزر */
+}
+
+.footer {
+  margin-top: 2%; /* إضافة هامش علوي */
+}
+
+.iraqi-logo {
+  width: auto; /* ضبط العرض تلقائياً */
+  height: 5vw; /* ارتفاع الشعار */
+}
+
+/* استجابات لتغيير حجم الشاشة */
+@media (max-width: 1024px) {
+  .main-button, .admin-button {
+    font-size: 2.5vw; /* تكبير الخط عند الشاشات المتوسطة */
   }
-  .container2 button:hover {
-    background-color: #1e859c;
+  .administration-container {
+    width: 25vw; /* زيادة عرض الحاوية عند الشاشات المتوسطة */
   }
-  .Header {
-    grid-column: span 2; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    padding: 0 40px 10px 40px; 
-    font-size: 36px;
-    color: white;
-  }
-  .Header img {
-    width: 334px;
-    height: 191px;
-  }
-  .Body {
-    display: grid;
-    grid-template-columns: repeat(2,1fr) ;
-    gap: 20px 15%;
-    padding: 0 0 0 20%;
-    
-  }
-  .Body div.Doctor,.DrugStore,.Pharmacist,.Receptionist,.Admin {
-    background-color: #E1F4F4;
-    width: 600px;
-    height: auto; 
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-  }
-  .Options {
-    display: contents; 
-    
-  }
-  .Options > div {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: space-between;
-    font-size: 36px;
-    height: 100%; 
-    padding-top: 10px;
-  }
-  .Options .content {
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    height: 120px;
-    justify-content: center;
-    width: 100%;
-  }
-  .Options .content img {
-    margin-right: 15px; 
-  }
-  .Options button {
-    width: 100%; 
-    height: 60px;
-    color: white;
-    font-size: 30px;
-    border: none;
-    background-color: #14DADA;
-    border-radius: 0 0 25px 25px;
-    text-align: center; 
-    cursor: pointer;
-    align-self: flex-end; 
-  }
-  
-  .Options .Receptionist img {
-    width: 174px;
-    height: 130px;
-  }
-  .Options .Doctor img {
-    width: 120px;
-    height: 105px;
-  }
-  .Options .Pharmacist img {
-    width: 107px;
-    height: 108px;
-  }
-  .Pharmacist .content{
-    margin-top: 25px;
-  }
-  .Options .DrugStore img {
-    width: 151px;
-    height: 154px;
-  }
-  .AdminHeader {
-    grid-row: 4;
-    grid-column: span 2;
-    text-align: center;
-    font-size: 24px;
-    color: white;
-  }
-  .Admin {
-    grid-row: 5;
-    grid-column: span 2;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    text-align: center;
-  }
-  .Admin > div {
-    padding: 10px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .Admin div button {
-    width: 100px;
-    height: 25px;
-    margin-top: 5px;
-    background-color: #14DADA;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .Admin div img {
-    width: 100px;
-    cursor: pointer;
+  .main-button {
+    height: 18vw; /* زيادة ارتفاع الزر عند الشاشات المتوسطة */
   }
 }
 
-
-
-/*for Laptops*/
-@media only screen and (min-width:992px) {
-  .Header{
-    font-size: 30px;}
-  .Header img{
-    width: 200px;
-    height: 120px;}
-  .Body div.Doctor,body div.DrugStore, body .Pharmacist,body .Receptionist,body .Admin{
-    grid-column: auto;
-    font-size: 24px;
-    padding:0;
-    width: 400px;
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* ترتيب العناصر بشكل عمودي عند الشاشات الأصغر */
+    align-items: center; /* محاذاة العناصر إلى الوسط أفقياً */
   }
-  .Options{
-    height: 600px;
+  .buttons-container {
+    grid-template-columns: 1fr; /* جعل الأزرار في عمود واحد عند الشاشات الأصغر */
   }
-  .Options .content{
-    height: 80px;
+  .main-button {
+    width: 40vw; /* زيادة عرض الزر عند الشاشات الأصغر */
+    height: 30vw; /* زيادة ارتفاع الزر عند الشاشات الأصغر */
+    font-size: 3vw; /* تكبير الخط داخل الزر عند الشاشات الأصغر */
   }
-  .Options .Receptionist img{
-    width: 80px;
-    height: 70px;
+  .administration-container {
+    width: 50vw; /* زيادة عرض الحاوية عند الشاشات الأصغر */
   }
-  .Options .Doctor img{
-    width: 80px;
-    height: 70px;
-  }
-  .Options .Pharmacist img{
-    width: 80px;
-    height: 80px;
-  }
-  .Options .DrugStore img{
-    width: 80px;
-    height: 80px;
-  }
-  .Options button{
-    height: 40px;
-    font-size: 21px;
-  }
-  .AdminHeader{
-    font-size: 16px;
-    height: 24px;
-    margin-right: 10%;
-    padding-bottom: 10px;
-  }
-  .Admin div img{
-    width: 50px;
-  }
-  .Admin{
-    grid-column:span 2;
-    grid-row: 5;
-    width: 100%;
-  }
-  .Body{
-    padding: 0;
-    gap: 20px 10%;
-    grid-column: span 2;
-    padding-left: 10%;
+  .admin-button {
+    width: 40vw; /* زيادة عرض الزر عند الشاشات الأصغر */
+    font-size: 2.5vw; /* تكبير الخط داخل الزر عند الشاشات الأصغر */
   }
 }
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 6vw; /* تكبير الخط للعنوان عند الشاشات الأصغر */
+  }
+  .home-logo {
+    width: 20vw; /* زيادة عرض الشعار عند الشاشات الأصغر */
+  }
+  .main-button {
+    width: 60vw; /* زيادة عرض الزر عند الشاشات الأصغر */
+    height: 40vw; /* زيادة ارتفاع الزر عند الشاشات الأصغر */
+    font-size: 4vw; /* تكبير الخط داخل الزر عند الشاشات الأصغر */
+  }
+  .administration-container {
+    width: 70vw; /* زيادة عرض الحاوية عند الشاشات الأصغر */
+  }
+  .admin-button {
+    width: 60vw; /* زيادة عرض الزر عند الشاشات الأصغر */
+    font-size: 3vw; /* تكبير الخط داخل الزر عند الشاشات الأصغر */
+  }
+}
+
