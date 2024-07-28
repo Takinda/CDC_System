@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css'; // استيراد ملف CSS المخصص للأنماط
-import homeLogo from '../Assets/images/Health.png'; // استيراد صورة شعار الصفحة الرئيسية
-import iraqiLogo from '../Assets/images/Iraqi.png'; // استيراد صورة شعار 
+import homeLogo from '../../Assets/images/Health.png'; // استيراد صورة شعار الصفحة الرئيسية
+import iraqiLogo from '../../Assets/images/Iraqi.png'; // استيراد صورة شعار 
 
 const Home = () => {
   return (
