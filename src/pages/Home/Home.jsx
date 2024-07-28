@@ -1,9 +1,8 @@
 import React from 'react';
-import './Home.css'; // استيراد ملف CSS المخصص للأنماط
-import homeLogo from '../Assets/images/Health.png'; // استيراد صورة شعار الصفحة الرئيسية
-import iraqiLogo from '../Assets/images/Iraqi.png'; // استيراد صورة شعار 
-
-const Home = () => {
+import './MHome.css'; // استيراد ملف CSS المخصص للأنماط
+import homeLogo from '../image/Health.png'; // استيراد صورة شعار الصفحة الرئيسية
+import iraqiLogo from '../image/Iraqi.png'; //استيراد صورة شعار 
+const MHome = () => {
   return (
     <div className="container"> {/* حاوية رئيسية */}
       <header className="header"> {/* رأس الصفحة */}
@@ -32,5 +31,4 @@ const Home = () => {
   );
 };
 
-export default Home; // تصدير المكون
-
+export default MHome; // تصدير المكون
