@@ -1,0 +1,175 @@
+html, body {
+  margin: 0; /* إزالة الهوامش الافتراضية */
+  padding: 0; /* إزالة الحشوات الافتراضية */
+  height: 100%; /* تحديد ارتفاع 100% للصفحة */
+  background-color: #B7EBF7; /* لون خلفية الصفحة الأساسي */
+}
+
+.Home-container {
+  background-color: #B7EBF7; /* لون خلفية الحاوية */
+  display: flex; /* استخدام Flexbox لترتيب المحتوى */
+  flex-direction: column; /* ترتيب المحتوى بشكل عمودي */
+  align-items: center; /* محاذاة المحتوى إلى الوسط أفقياً */
+  padding: 0 8%; /* حشوة داخلية بنسبة 0% أعلى وأسفل و8% يمين ويسار */
+  font-family: 'Times New Roman', Times, serif; /* نوع الخط المستخدم */
+  width: 100%; /* عرض الحاوية 100% من العرض الكلي */
+  min-height: 100vh; /* ارتفاع الحاوية ليشمل كامل النافذة */
+  box-sizing: border-box; /* تضمين الحواف والفراغات في حجم العنصر */
+}
+
+.Home-header {
+  display: flex; /* استخدام Flexbox لترتيب العناصر الداخلية */
+  align-items: center; /* محاذاة العناصر إلى الوسط عمودياً */
+  justify-content: space-between; /* توزيع العناصر مع ترك فراغات بينهما */
+  width: 100%; /* عرض الحاوية 100% من العرض الكلي */
+}
+
+.Home-header h1 {
+  font-size: 3.5vw; /* حجم الخط للعنوان */
+  color: black; /* لون الخط للعنوان */
+  margin: 0; /* إزالة الهامش الافتراضي */
+}
+
+.Home-home-logo {
+  width: 8vw; /* عرض الشعار */
+  height: auto; /* ارتفاع تلقائي للحفاظ على النسبة */
+}
+
+.Home-main-content {
+  display: flex; /* استخدام Flexbox لترتيب العناصر الداخلية */
+  justify-content: space-between; /* توزيع العناصر مع ترك فراغات بينهما */
+  width: 100%; /* عرض الحاوية 100% من العرض الكلي */
+  margin-top: 2%; /* إضافة هامش علوي */
+}
+
+.Home-buttons-container {
+  display: grid; /* استخدام Grid لترتيب الأزرار */
+  grid-template-columns: repeat(2, 1fr); /* تكرار عمودين بنفس العرض */
+  grid-gap: 4%; /* ترك فراغات بين الأزرار */
+}
+
+.Home-main-button {
+  width: 22vw; /* عرض الزر */
+  height: 12vw; /* ارتفاع الزر */
+  border-radius: 1vw; /* حواف دائرية للزر */
+  background-color: #E1F4F4; /* لون خلفية الزر */
+  border: 0.15vw solid #25A2BE; /* لون وحجم حافة الزر */
+  font-size: 2.5vw; /* حجم الخط داخل الزر */
+  color: black; /* لون الخط داخل الزر */
+  cursor: pointer; /* تغيير مؤشر الفأرة عند التمرير فوق الزر */
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.1s ease; /* تأثيرات الانتقال */
+}
+
+.Home-main-button:hover {
+  background-color: #dce1e2; /* تغيير لون الخلفية عند التمرير */
+  border-color: #85b1bc; /* تغيير لون الحدود عند التمرير */
+}
+
+.Home-main-button:active {
+  transform: scale(0.98); /* تقليص حجم الزر قليلاً عند النقر */
+}
+
+.Home-administration-container {
+  background-color: #E1F4F4; /* لون خلفية الحاوية */
+  border: 0.15vw solid #25A2BE; /* لون وحجم حافة الحاوية */
+  width: 22vw; /* عرض الحاوية */
+  padding: 1%; /* فراغ داخلي */
+  box-sizing: border-box; /* تضمين الحواف والفراغات في حجم العنصر */
+  border-radius: 2vw; /* حواف دائرية للحاوية */
+  display: flex; /* استخدام Flexbox لترتيب العناصر الداخلية */
+  flex-direction: column; /* ترتيب العناصر بشكل عمودي */
+  align-items: center; /* محاذاة العناصر إلى الوسط أفقياً */
+}
+
+.Home-administration-container h2 {
+  font-size: 2.3vw; /* حجم الخط للعنوان */
+  color: black; /* لون الخط للعنوان */
+  margin-top: 2%; /* إضافة هامش علوي */
+  margin-bottom: 10%; /* إضافة هامش سفلي */
+}
+
+.Home-admin-button {
+  width: 12vw; /* عرض الزر */
+  height: 3.5vw; /* ارتفاع الزر */
+  border-radius: 1.2vw; /* حواف دائرية للزر */
+  background-color: #14B6DA; /* لون خلفية الزر */
+  color: white; /* لون الخط داخل الزر */
+  font-size: 1.5vw; /* حجم الخط داخل الزر */
+  border: none; /* إزالة الحواف الافتراضية */
+  margin-bottom: 5%; /* إضافة هامش سفلي */
+  cursor: pointer; /* تغيير مؤشر الفأرة عند التمرير فوق الزر */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* تأثيرات الانتقال */
+}
+
+.Home-admin-button:hover {
+  background-color: #69a7ba; /* تغيير لون الخلفية عند التمرير */
+}
+
+.Home-admin-button:active {
+  transform: scale(0.95); /* تقليص حجم الزر قليلاً عند النقر */
+}
+
+.Home-footer {
+  margin-top: 3%; /* إضافة هامش علوي */
+}
+
+.Home-iraqi-logo {
+  width: auto; /* ضبط العرض تلقائياً */
+  height: 6vw; /* ارتفاع الشعار */
+}
+
+/* استجابات لتغيير حجم الشاشة */
+@media (max-width: 1024px) {
+  .Home-main-button, .Home-admin-button {
+    font-size: 2.2vw; /* تكبير الخط عند الشاشات المتوسطة */
+  }
+  .Home-administration-container {
+    width: 20vw; /* زيادة عرض الحاوية عند الشاشات المتوسطة */
+  }
+  .Home-main-button {
+    height: 14vw; /* زيادة ارتفاع الزر عند الشاشات المتوسطة */
+  }
+}
+
+@media (max-width: 768px) {
+  .Home-main-content {
+    flex-direction: column; /* ترتيب العناصر بشكل عمودي عند الشاشات الأصغر */
+    align-items: center; /* محاذاة العناصر إلى الوسط أفقياً */
+  }
+  .Home-buttons-container {
+    grid-template-columns: 1fr; /* جعل الأزرار في عمود واحد عند الشاشات الأصغر */
+  }
+  .Home-main-button {
+    width: 35vw; /* زيادة عرض الزر عند الشاشات الأصغر */
+    height: 25vw; /* زيادة ارتفاع الزر عند الشاشات الأصغر */
+    font-size: 2.5vw; /* تكبير الخط داخل الزر عند الشاشات الأصغر */
+  }
+  .Home-administration-container {
+    width: 45vw; /* زيادة عرض الحاوية عند الشاشات الأصغر */
+  }
+  .Home-admin-button {
+    width: 35vw; /* زيادة عرض الزر عند الشاشات الأصغر */
+    font-size: 2vw; /* تكبير الخط داخل الزر عند الشاشات الأصغر */
+  }
+}
+
+@media (max-width: 480px) {
+  .Home-header h1 {
+    font-size: 5vw; /* تكبير الخط للعنوان عند الشاشات الأصغر */
+  }
+  .Home-home-logo {
+    width: 15vw; /* زيادة عرض الشعار عند الشاشات الأصغر */
+  }
+  .Home-main-button {
+    width: 50vw; /* زيادة عرض الزر عند الشاشات الأصغر */
+    height: 35vw; /* زيادة ارتفاع الزر عند الشاشات الأصغر */
+    font-size: 3.5vw; /* تكبير الخط داخل الزر عند الشاشات الأصغر */
+  }
+  .Home-administration-container {
+    width: 60vw; /* زيادة عرض الحاوية عند الشاشات الأصغر */
+  }
+  .Home-admin-button {
+    width: 50vw; /* زيادة عرض الزر عند الشاشات الأصغر */
+    font-size: 2.5vw; /* تكبير الخط داخل الزر عند الشاشات الأصغر */
+  }
+}

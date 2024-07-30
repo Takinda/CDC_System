@@ -1,0 +1,167 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #E1F4F4;
+}
+
+.invoice-container {
+  width: 100%;
+  height: 100%;
+  background-color: #E1F4F4;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.invoice-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: black;
+}
+
+.invoice-form {
+  background-color: #B2E8F4;
+  width: 40%;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 20px;
+  color: black;
+  width: 180px;
+  margin-right: 10px;
+}
+
+.form-group input {
+  width: 100%;
+  max-width: 350px;
+  height: 35px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.diseases-group {
+  display: flex;
+  align-items: center;
+}
+
+.add-option-button {
+  margin-left: 10px;
+  padding: 10px 35px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #eae7e7;
+  border-radius: 12px;
+}
+
+.invoice-buttons {
+  display: flex;
+  justify-content: right;
+  margin-right: 44px;
+  margin-top: 20px;
+}
+
+.save-button, .print-button {
+  background-color: #E1F4F4;
+  width: 160px;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.button-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.save-button:hover, .print-button:hover {
+  background-color: #45a1b181;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid #888;
+  width: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close {
+  font-family: "Times New Roman", Times, serif;
+  align-self: flex-end;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover, .close:focus {
+  color: rgb(255, 255, 255);
+}
+
+.new-disease-input {
+  width: 80%;
+  padding: 8px;
+  margin-top: 15px;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.modal-add-button {
+  margin-top: 15px;
+  padding: 8px 40px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #BAEBF2;
+  border: none;
+  border-radius: 12px;
+}

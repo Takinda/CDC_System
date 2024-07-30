@@ -1,0 +1,121 @@
+/* تأثيرات العموم للصفحة */
+html, body {
+  margin: 0; /* إزالة الهوامش الافتراضية */
+  padding: 0; /* إزالة الحشوات الافتراضية */
+  height: 100%; /* تحديد ارتفاع 100% للصفحة */
+  background-color: #B7EBF7; /* لون خلفية الصفحة الأساسي */
+}
+
+.Receptionist-container {
+  background-color: #B7EBF7; /* لون خلفية الحاوية */
+  display: flex; /* استخدام Flexbox لترتيب المحتوى */
+  flex-direction: column; /* ترتيب المحتوى بشكل عمودي */
+  align-items: center; /* محاذاة المحتوى إلى الوسط أفقياً */
+  padding: 0 8%; /* حشوة داخلية بنسبة 0% أعلى وأسفل و8% يمين ويسار */
+  font-family: 'Times New Roman', Times, serif; /* نوع الخط المستخدم */
+  width: 100%; /* عرض الحاوية 100% من العرض الكلي */
+  min-height: 100vh; /* ارتفاع الحاوية ليشمل كامل النافذة */
+  box-sizing: border-box; /* تضمين الحواف والفراغات في حجم العنصر */
+}
+
+.Receptionist-header {
+  display: flex; /* استخدام Flexbox لترتيب العناصر الداخلية */
+  align-items: center; /* محاذاة العناصر إلى الوسط عمودياً */
+  justify-content: space-between; /* توزيع العناصر مع ترك فراغات بينهما */
+  width: 100%; /* عرض الحاوية 100% من العرض الكلي */
+}
+
+.Receptionist-header h1 {
+  font-size: 3.5vw; /* حجم الخط للعنوان */
+  color: black; /* لون الخط للعنوان */
+  margin: 0; /* إزالة الهامش الافتراضي */
+}
+
+.Receptionist-home-logo {
+  width: 10vw; /* عرض الشعار */
+  height: auto; /* ارتفاع تلقائي للحفاظ على النسبة */
+}
+
+.Receptionist-main-content {
+  display: flex; /* استخدام Flexbox لترتيب العناصر الداخلية */
+  justify-content: center; /* محاذاة العناصر إلى الوسط أفقياً */
+  width: 100%; /* عرض الحاوية 100% من العرض الكلي */
+  margin-top: 2%; /* إضافة هامش علوي */
+}
+
+.Receptionist-buttons-container {
+  display: grid; /* استخدام Grid لترتيب الأزرار */
+  grid-template-columns: repeat(2, 1fr); /* تكرار عمودين بنفس العرض */
+  grid-gap: 4%; /* ترك فراغات بين الأزرار */
+}
+
+.Receptionist-main-button {
+  width: 21vw; /* عرض الزر */
+  height: 11vw; /* ارتفاع الزر */
+  border-radius: 0.5vw; /* حواف دائرية للزر */
+  background-color: #E1F4F4; /* لون خلفية الزر */
+  border: 0.15vw solid #25A2BE; /* لون وحجم حافة الزر */
+  font-size: 2.4vw; /* حجم الخط داخل الزر */
+  color: black; /* لون الخط داخل الزر */
+  cursor: pointer; /* تغيير مؤشر الفأرة عند التمرير فوق الزر */
+  transition: background-color 0.3s, transform 0.2s; /* تأثير الانتقال لتغيير الأنماط */
+}
+
+.Receptionist-main-button:active {
+  background-color: #c0e1e2; /* تغيير لون الخلفية عند الضغط */
+  transform: scale(0.98); /* تصغير حجم الزر قليلاً عند الضغط */
+}
+
+.Receptionist-main-button:hover {
+  background-color: #ccddde; /* تغيير لون الخلفية عند التمرير فوق الزر */
+}
+
+.Receptionist-main-button:focus {
+  outline: none; /* إزالة الخط الافتراضي حول الزر عند التركيز */
+  box-shadow: 0 0 0 2px rgba(37, 162, 190, 0.5); /* إضافة ظل حول الزر عند التركيز */
+}
+
+.Receptionist-footer {
+  margin-top: 3%; /* إضافة هامش علوي */
+}
+
+.Receptionist-iraqi-logo {
+  width: auto; /* ضبط العرض تلقائياً */
+  height: 5vw; /* ارتفاع الشعار */
+}
+
+/* استجابات لتغيير حجم الشاشة */
+@media (max-width: 1024px) {
+  .Receptionist-main-button {
+    font-size: 2.2vw; /* تكبير الخط عند الشاشات المتوسطة */
+  }
+}
+
+@media (max-width: 768px) {
+  .Receptionist-main-content {
+    flex-direction: column; /* ترتيب العناصر بشكل عمودي عند الشاشات الأصغر */
+    align-items: center; /* محاذاة العناصر إلى الوسط أفقياً */
+  }
+  .Receptionist-buttons-container {
+    grid-template-columns: 1fr; /* جعل الأزرار في عمود واحد عند الشاشات الأصغر */
+  }
+  .Receptionist-main-button {
+    width: 34vw; /* زيادة عرض الزر عند الشاشات الأصغر */
+    height: 24vw; /* زيادة ارتفاع الزر عند الشاشات الأصغر */
+    font-size: 2.4vw; /* تكبير الخط داخل الزر عند الشاشات الأصغر */
+  }
+}
+
+@media (max-width: 480px) {
+  .Receptionist-header h1 {
+    font-size: 5vw; /* تكبير الخط للعنوان عند الشاشات الأصغر */
+  }
+  .Receptionist-home-logo {
+    width: 15vw; /* زيادة عرض الشعار عند الشاشات الأصغر */
+  }
+  .Receptionist-main-button {
+    width: 49vw; /* زيادة عرض الزر عند الشاشات الأصغر */
+    height: 34vw; /* زيادة ارتفاع الزر عند الشاشات الأصغر */
+    font-size: 3.4vw; /* تكبير الخط داخل الزر عند الشاشات الأصغر */
+  }
+}

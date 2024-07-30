@@ -1,0 +1,159 @@
+html, body {
+  height: 100%; /* تعيين ارتفاع كامل للـ html و body */
+  margin: 0; /* إزالة الهوامش */
+}
+
+.patient-list-container {
+  display: flex; /* استخدام flexbox لتخطيط العناصر */
+  flex-direction: column; /* ترتيب العناصر عموديًا */
+  background-color: #E1F4F4; /* تعيين لون خلفية */
+  font-family: 'Times New Roman', serif; /* تعيين خط النص */
+  min-height: 100vh; /* تعيين الحد الأدنى للارتفاع ليتناسب مع ارتفاع الشاشة */
+}
+
+.patient-list-header {
+  color: black; /* تعيين لون النص */
+  font-size: 4vw; /* تعيين حجم الخط كنسبة مئوية من عرض العرض */
+  margin-bottom: 20px; /* إضافة هامش سفلي */
+  align-items: center; /* محاذاة العناصر في المنتصف */
+  margin-left: 160px;
+}
+
+.patient-list-button-container {
+  margin-bottom: 20px; /* إضافة هامش سفلي */
+  display: flex; /* استخدام flexbox لتخطيط العناصر */
+  gap: 20px; /* إضافة تباعد بين العناصر */
+  margin-left: 160px;
+}
+
+.patient-list-search-input {
+  border: 1px solid #D3D3D3; /* تعيين لون وسمك الحد */
+  padding: 10px; /* إضافة حشوة داخل صندوق البحث */
+  border-radius: 16px; /* تعيين حواف دائرية */
+  font-size: 1vw; /* تعيين حجم الخط كنسبة مئوية من العرض */
+  width: 60%; /* تعيين عرض نسبي */
+  max-width: 250px; /* تعيين أقصى عرض */
+}
+
+.patient-list-add-button {
+  border: none; /* إزالة الحد */
+  color: #000; /* تعيين لون النص */
+  font-size: 1vw; /* تعيين حجم الخط كنسبة مئوية من العرض */
+  cursor: pointer; /* تغيير شكل المؤشر عند المرور فوق الزر */
+  background-color: #39c1d6b8; /* تعيين لون خلفية الزر */
+  width: 160px; /* تعيين عرض ثابت للزر */
+  height: 40px; /* تعيين ارتفاع ثابت للزر */
+  border-radius: 16px; /* تعيين حواف دائرية */
+}
+
+.patient-list-add-button:hover {
+  background-color: #28a0b2; /* تغيير لون الخلفية عند المرور فوق الزر */
+  color: white; /* تغيير لون النص عند المرور فوق الزر */
+}
+
+.patient-list-table-container {
+  width: 100%; /* تعيين العرض الكامل */
+  max-width: 1200px; /* تعيين أقصى عرض */
+  height: 480px; /* تعيين ارتفاع ثابت */
+  font-size: 1.5vw; /* تعيين حجم الخط كنسبة مئوية من العرض */
+  overflow-x: auto; /* تمكين التمرير الأفقي */
+  border: 1px solid #D3D3D3; /* تعيين لون وسمك الحد */
+  border-radius: 8px; /* تعيين حواف دائرية */
+  margin: 0 auto; /* محاذاة الجدول في الوسط */
+}
+
+.patient-list-patient-table {
+  width: 100%; /* تعيين العرض الكامل للجدول */
+  border-collapse: collapse; /* دمج الحدود */
+}
+
+.patient-list-patient-table thead {
+  background-color: #BAEBF2; /* تعيين لون خلفية رأس الجدول */
+}
+
+.patient-list-patient-table th, .patient-list-patient-table td {
+  padding: 10px; /* إضافة حشوة داخل الخلايا */
+  text-align: left; /* محاذاة النص إلى اليسار */
+  border-bottom: 1px solid #D3D3D3; /* تعيين لون وسمك الحد السفلي */
+}
+
+.patient-list-patient-table tbody tr:last-child td {
+  border-bottom: none; /* إزالة الحد السفلي للصف الأخير */
+}
+
+.patient-list-patient-table tbody tr {
+  background-color: #D1F3FA; /* تعيين لون خلفية الصفوف */
+}
+
+.patient-list-procedure-icons {
+  display: flex; /* استخدام flexbox لتخطيط أيقونات الإجراءات */
+  gap: 10px; /* إضافة تباعد بين الأيقونات */
+}
+
+.patient-list-procedure-button {
+  width: 36px; /* تعيين عرض الأيقونات */
+  height: 36px; /* تعيين ارتفاع الأيقونات */
+  cursor: pointer; /* تغيير شكل المؤشر عند المرور فوق الأيقونات */
+}
+
+@media (max-width: 1200px) {
+  .patient-list-header {
+    font-size: 5vw; /* زيادة حجم الخط عند الشاشات الأصغر */
+  }
+
+  .patient-list-search-input {
+    font-size: 1.2vw; /* زيادة حجم خط صندوق البحث */
+    width: 50%; /* تقليل عرض صندوق البحث */
+  }
+
+  .patient-list-add-button {
+    font-size: 1.2vw; /* زيادة حجم خط الزر */
+  }
+
+  .patient-list-table-container {
+    font-size: 1.8vw; /* زيادة حجم خط الجدول */
+  }
+}
+
+@media (max-width: 992px) {
+  .patient-list-header {
+    font-size: 6vw; /* زيادة حجم الخط عند الشاشات الأصغر */
+  }
+
+  .patient-list-search-input {
+    font-size: 1.5vw; /* زيادة حجم خط صندوق البحث */
+    width: 60%; /* تقليل عرض صندوق البحث */
+  }
+
+  .patient-list-add-button {
+    font-size: 1.5vw; /* زيادة حجم خط الزر */
+  }
+
+  .patient-list-table-container {
+    font-size: 2vw; /* زيادة حجم خط الجدول */
+  }
+}
+
+@media (max-width: 768px) {
+  .patient-list-header {
+    font-size: 7vw; /* زيادة حجم الخط عند الشاشات الأصغر */
+  }
+
+  .patient-list-search-input {
+    font-size: 2vw; /* زيادة حجم خط صندوق البحث */
+    width: 70%; /* تقليل عرض صندوق البحث */
+  }
+
+  .patient-list-add-button {
+    font-size: 2vw; /* زيادة حجم خط الزر */
+  }
+
+  .patient-list-table-container {
+    font-size: 2.5vw; /* زيادة حجم خط الجدول */
+  }
+
+  .patient-list-procedure-button {
+    width: 20px; /* تقليل حجم الأيقونات */
+    height: 20px; /* تقليل حجم الأيقونات */
+  }
+}
