@@ -1,49 +1,115 @@
 .Tcontainer {
     width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
+    border-radius: 25px;
+    border: 2px solid black;
+    overflow: hidden; /* Prevents the scrollbars from appearing on the container */
 }
-.Med-Header{
-    width: 100%;
-    background-color: #B0EEEE;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    color: black;
-}
-.Med-Body{
+
+.Tcontainer table {
     width: 100%;
     background-color: #D1F3FA;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: scroll;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
-.Med-Row{
+
+.Tcontainer thead {
+    background-color: #b0eeee;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    align-items: center;
+    position: sticky; 
+    top: 0; 
+    z-index: 1; 
     border-bottom: 1px solid black;
 }
 
-.Med-Row p{
-    background-color: red;
-    text-align: center;
+.Tcontainer th, .Tcontainer td {
+    padding: 10px; 
+    text-align: left;
 }
-
-@media only screen and (min-width: 992px) {
-    .Tcontainer{height: 300px;}
-    .Med-Header{height: 40px;}
-    .Med-Body{height: 260px;}
-}
-
-@media only screen and (min-width: 1400px) {
-    .Tcontainer{height: 550px;}
-    .Med-Header{height: 50px;}
-    .Med-Body{height: 500px;}
-   
+.Tcontainer td{height: 40px;}
+.Tcontainer tbody {
+    display: block;
     
+    overflow-y: auto; 
+    overflow-x:hidden ;
+    scrollbar-width: thin;
+    width: 100%;
 }
+
+.Tcontainer thead, .Tcontainer tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.Med-Row .Med-Description{font-size: 16px;}
+
+
+.select-btn {
+    background-color: #25be72;
+    color: white;
+    border: none;
+    border-radius: 5px
+}
+
+.request-btn {
+    background-color: #8373db;
+    color: white;
+    border: none;
+    border-radius: 5px
+}
+    .select-btn:hover{cursor: pointer;  background-color: #20a060;} 
+    .request-btn:hover{cursor: pointer;  background-color: #6f62bb;} 
+
+
+    @media screen and (min-width: 992px) {
+        .Med-Header tr {
+            height: 30px;
+        }
+        .Med-Header { font-size: 20px; }
+        .Tcontainer tbody{max-height: 250px; }
+        .Med-Row { font-size: 18px; }
+        .Med-Row .Med-Quantity { text-indent: 10%; }
+        .Med-Buttons{ 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center; 
+        }
+        .select-btn{
+            width: 100px;
+            height: 25px;
+            font-size: 14px;
+        }
+        .request-btn{
+            width: 100px;
+            height: 25px;
+            font-size: 14px;
+        }
+    }
+
+@media screen and (min-width: 1400px) {
+    .Med-Header { font-size: 24px; }
+    .Tcontainer tbody{max-height: 500px; }
+    .Med-Row { font-size: 20px; }
+    .Med-Row .Med-Quantity { text-indent: 10%; }
+    .Med-Buttons{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .select-btn{
+        width: 100px;
+        height: 25px;
+        font-size: 18px;
+    }
+    .request-btn{
+        width: 100px;
+        height: 25px;
+        font-size: 18px;
+    }
+    .Med-Header tr {
+        height: 50px;
+    }
+}
+
+

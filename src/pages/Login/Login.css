@@ -1,4 +1,4 @@
-.Logincontainer{
+.Login-container{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +8,7 @@
     border-radius: 25px;
     background-color: #F1F1F1;
 }
-.Loginbackground{
+.Login-back-ground{
     background-color: #25A2BE;
     height: 100vh;
     width: 100%;
@@ -16,18 +16,18 @@
     justify-content: center;
     align-items: center;
 }
-.Logincontainer h1{
+.Login-container h1{
     text-align: center;
     font-size: 54px;
     margin-bottom: 40px;
 }
-.input-box2{
+.input-box-Login{
     position: relative;
     width: 520px;
     height: 70px;
     margin: 30px 0;
 }
-.input-box2 input{
+.input-box-Login input{
     width: 100%;
     height: 100%;
     border: none;
@@ -37,15 +37,15 @@
     text-indent: 25px;
 }
 
-.input-box2 input::placeholder{
+.input-box-Login input::placeholder{
     color: black;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
 }
-.submit-box2{
+.submit-box-Loign{
     text-align: center;
 }
-.submit-box2 button{
+.submit-box-Loign button{
     margin-top: 30px;
     width: 150px;
     height: 55px;
@@ -57,12 +57,12 @@
     color: #F1F1F1;
     cursor: pointer;
 }
-.submit-box2 button{
+.submit-box-Loign button{
     color: #F1F1F1;
     font-family: 'Times New Roman', Times, serif;
     
 }
-.submit-box2 button:hover{
+.submit-box-Loign button:hover{
     background-color: #1c7f95;
     
 }

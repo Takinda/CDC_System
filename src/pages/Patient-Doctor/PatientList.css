@@ -7,6 +7,7 @@
     flex-direction: column;
   }
   .PageHeader{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,8 +15,10 @@
     align-items: center;
     color: white;
   }
-  .Doctor-Welcoming{
+  .Doctor-Welcoming{ 
     display: flex;
+    align-items: center;
+    gap: 20px;
     width: 80%;
     color: white;
   }
@@ -55,6 +58,7 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 25px 25px 0 0;
+    border-bottom: 1px solid black;
   }
   .ListTitle p{
     width: 150px;
@@ -65,7 +69,8 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-
+    overflow-y: auto;
+    scrollbar-width: thin;
   }
   .PatientN{
     display: flex;
@@ -74,6 +79,9 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid black;
+  }
+  .PatientN:last-child{
+    border-bottom: none;
   }
   .PatientN:hover{
     background-color: #d5e7e7;
@@ -96,6 +104,44 @@
     border-radius: 10px;
   }
   .PatientN #Dismiss:hover{background-color: #8f4444; cursor: pointer;}
+  .Notification{
+    position: absolute;
+    color: #000;
+    top: 50%;
+    right: 2%;
+    width: 300px;
+    height: 230px;
+    background-color: #E1F4F4;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-right: 10px;
+    text-align: right;
+  }
+  .Bell{
+    cursor: pointer;
+  }
+  .Notification p{padding-right: 10px; padding-top: 10px;}
+  .exit-btn{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+  }
+.Number-Nots{
+  right: 40px;
+  top: 10px;
+  position: absolute;
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: rgb(177, 24, 24);
+  width: 25px;
+  padding: 4px 0;
+  text-align: center;
+  border-radius: 25px;
+}
+
+
 
   /* Laptop */
 
@@ -105,8 +151,8 @@
       padding-top: 10px;
       padding-bottom: 1%;
     }
-    .PageHeader img{
-      width: 150px;
+    .Doctor-img{
+      width: 100px;
     }
     .Doctor-Welcoming{
       font-size: 20px;
@@ -137,7 +183,7 @@
     .RoomN{
       text-indent: 10px;
     }
-    .ListRoom{ height: 309px; overflow-y: auto;}
+    .ListRoom{ height: 309px; }
 
     .PatientN button{ 
       width: 80px;
@@ -154,10 +200,9 @@
       padding-top: 10px;
       padding-bottom: 2%;
     }
-    .PageHeader img{
-      width: 200px;
+    .Doctor-img{
+      width: 80px;
     }
-
     .Doctor-Welcoming{
       font-size: 20px;
       padding-bottom: 20px;
@@ -187,7 +232,7 @@
     .RoomN{
       text-indent: -80px;
     }
-    .ListRoom{ height: 550px; overflow-y: auto;}
+    .ListRoom{ height: 550px;}
 
     .PatientN button{ 
       width: 100px;

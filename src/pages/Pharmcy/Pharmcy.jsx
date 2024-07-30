@@ -4,7 +4,7 @@ import MedicationsTable from "./MedicationTable.jsx";
 import ListPatients from "./ListPatients.jsx";
 import React ,{useState} from 'react';
 import {Link} from "react-router-dom"
-function Pharmcy()
+function Pharmcy() 
 {
     const [component, setComponent] = useState('MedicationsTable');
     const handleClick = () => {
@@ -37,7 +37,7 @@ function Pharmcy()
                     onClick={() => setComponent('ListPatients')}
                 >
                     Patients list
-                </Link>
+                </Link> 
         </div>
         {component === 'MedicationsTable' && (
                 <div className="Boxes-Container2">

@@ -13,7 +13,7 @@ function ListPatients()
                       </div>
                </div>
                <div className="Table-Container">
-                <PatientsTable/>
+                <PatientsTable/> 
                </div>
 
             </div>

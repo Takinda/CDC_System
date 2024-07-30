@@ -1,10 +1,3 @@
-html, body {
-  margin: 0; /* إزالة الهوامش الافتراضية */
-  padding: 0; /* إزالة الحشوات الافتراضية */
-  height: 100%; /* تحديد ارتفاع 100% للصفحة */
-  background-color: #B7EBF7; /* لون خلفية الصفحة الأساسي */
-}
-
 .container {
   background-color: #B7EBF7; /* لون خلفية الحاوية */
   display: flex; /* استخدام Flexbox لترتيب المحتوى */
@@ -116,7 +109,8 @@ html, body {
   .main-content {
     flex-direction: column; /* ترتيب العناصر بشكل عمودي عند الشاشات الأصغر */
     align-items: center; /* محاذاة العناصر إلى الوسط أفقياً */
-.container2{
+  }
+  .container2{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,6 +282,7 @@ html, body {
   }
   .home-logo {
     width: 15vw; /* زيادة عرض الشعار عند الشاشات الأصغر */
+  }
   .Rows div button{
     font-size: 24px;
     height: 40px;
@@ -317,8 +312,10 @@ html, body {
   .admin-button {
     width: 50vw; /* زيادة عرض الزر عند الشاشات الأصغر */
     font-size: 2.5vw; /* تكبير الخط داخل الزر عند الشاشات الأصغر */
+  }
   .Admin div button{
     font-size: 20px;
     height: 30px;
   }
 }
+  }

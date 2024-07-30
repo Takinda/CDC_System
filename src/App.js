@@ -4,7 +4,7 @@ import Login from './pages/Login/Login';
 import AddUsers from './pages/AddUser/AddUser';
 import MainPage from './pages/Home/Home';
 import DashBoard from './pages/DashBoard/DashBoard';
-import PatientList from './pages/Receptionist/Inside-pages/PatientList';
+import PatientList from './pages/Patient-Doctor/PatientList';
 import Receptionist from './pages/Receptionist/Receptionist';
 import HealthSer from './pages/Receptionist/Inside-pages/HealthSer';
 import Invoices from './pages/Invoices/Invoices';

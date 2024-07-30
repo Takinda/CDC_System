@@ -12,17 +12,17 @@ const Home = () => {
       </header>
       <div className="main-content"> {/* المحتوى الرئيسي */}
         <div className="buttons-container"> {/* حاوية الأزرار */}
-          <button className="main-button">Receptionist</button> {/* زر موظف الاستقبال */}
-          <button className="main-button">Doctor</button> {/* زر الطبيب */}
-          <button className="main-button">Pharmacist</button> {/* زر الصيدلي */}
-          <button className="main-button">ID Issuance</button> {/* زر إصدار الهويات */}
+          <Link to="/Receptionist"><button className="main-button">Receptionist</button></Link> {/* زر موظف الاستقبال */}
+          <Link to="/PatientList"><button className="main-button">Doctor</button></Link>{/* زر الطبيب */}
+          <Link to="/Pharmacy"><button className="main-button">Pharmacist</button></Link> {/* زر الصيدلي */}
+          <Link to="/Card"><button className="main-button">ID Issuance</button></Link>{/* زر إصدار الهويات */}
         </div>
         <div className="administration-container"> {/* حاوية الإدارة */}
           <h2>Administration</h2> {/* عنوان الإدارة */}
-          <button className="admin-button">Drug store</button> {/* زر الصيدلية */}
-          <button className="admin-button">Dashboard</button> {/* زر لوحة القيادة */}
-          <button className="admin-button">Reports</button> {/* زر التقارير */}
-          <button className="admin-button">Records</button> {/* زر السجلات */}
+          <Link to="/DrugStore"><button className="admin-button">Drug store</button></Link> {/* زر الصيدلية */}
+          <Link to="/Dashboard"><button className="admin-button">Dashboard</button></Link> {/* زر لوحة القيادة */}
+          <Link to="/Reports"><button className="admin-button">Reports</button></Link> {/* زر التقارير */}
+          <Link to="/Record"><button className="admin-button">Records</button></Link> {/* زر السجلات */}
         </div>
       </div>
       <footer className="footer"> {/* تذييل الصفحة */}

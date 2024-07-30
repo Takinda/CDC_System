@@ -15,12 +15,9 @@ function Table() {
                     <thead> 
                         <tr>
                             <th>Patient</th>
-                            <th>Procedures</th>
+                            <th>Procedures</th> 
                         </tr>
                     </thead> 
-                </table> 
-                <div className="tbody-container">
-                    <table>
                         <tbody>
                             {Patients.map((Patient) => (
                                 <tr key={Patient.id}>
@@ -39,8 +36,7 @@ function Table() {
                                 </tr>
                             ))}
                         </tbody>
-                    </table>
-                </div>
+                </table>
             </div>
         </div>
     );

@@ -4,24 +4,49 @@ import './MedicationTable.css';
 
 function Table() {
     const [Medications, setMeds] = useState(data);
-    
+    const [selectedMeds, setSelectedMeds] = useState({});
+
+    const toggleSelect = (id) => {
+        setSelectedMeds(prevState => ({
+            ...prevState,
+            [id]: !prevState[id]
+        }));
+    };
+
     return (
         <div className="Tcontainer">
-           <div className="Med-Header">
-                <p className="Med-Name">Name</p>
-                <p className="Med-Description">Description</p>
-                <p className="Med-Quantity">Quantity</p>
-           </div>
-           <div className="Med-Body">
-                {Medications.map((med) => (
-                    <div className="Med-Row" key={med.id} >
-                        <p className="Med-Name">{med.Medication}</p>
-                        <p className="Med-Description">{med.Description}</p>
-                        <p className="Med-Quantity">{med.Quantity}</p>
-                        <button className="Med-Button">Select</button>
-                    </div>
-                ))}
-            </div>
+            <table>
+                <thead className="Med-Header">
+                    <tr>
+                        <th className="Med-Name">Name</th>
+                        <th className="Med-Description">Description</th>
+                        <th className="Med-Quantity">Quantity</th>
+                        <th></th>
+                    </tr> 
+                </thead>
+                <tbody className="Med-Body">
+                    {Medications.map((med) => (
+                        <tr className="Med-Row" key={med.id}>
+                            <td className="Med-Name">{med.Medication}</td>
+                            <td className="Med-Description">{med.Description}</td>
+                            <td className="Med-Quantity">{med.Quantity}</td>
+                            <td className="Med-Buttons">
+                                <button
+                                    className="select-btn"
+                                    style={{
+                                        backgroundColor: selectedMeds[med.id] ? '#cacaca' : '#25be72',
+                                        color: selectedMeds[med.id] ? 'black' : 'white'
+                                    }}
+                                    onClick={() => toggleSelect(med.id)}
+                                >
+                                    {selectedMeds[med.id] ? "Selected" : "Select"}
+                                </button>
+                                <button className="request-btn">Request</button>
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </div>
     );
 }
