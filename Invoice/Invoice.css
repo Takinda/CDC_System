@@ -1,0 +1,56 @@
+.invoices-container {
+    padding: 20px;
+    background-color: #E1F4F4;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #BAEBF2;
+    padding: 10px;
+}
+
+.title {
+    font-size: 30px;
+    color: #000;
+}
+
+.search-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-picker {
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #D1F3FA;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #25A2BE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoice-table th, .invoice-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.invoice-table th {
+    background-color: #BAEBF2;
+}
