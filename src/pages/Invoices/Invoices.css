@@ -1,0 +1,87 @@
+.InvoiceContainer{
+    background-color: #E1F4F4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.InvoiceHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 64px;
+    padding: 25px 10% 0 9%;
+    color: rgb(0, 0, 0);
+}
+.InvoiceHeader > p{
+    font-weight: 600;
+}
+.InvoiceBody{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.InList{
+    background-color: #D1F3FA;
+    width: 1580px;
+    height: 700px;
+    border: #d3d3d3 solid 2px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 3px #000000;
+}
+.InHeader{
+    display: flex;
+    background-color: #BAEBF2;
+    border-radius: 30px 30px 0 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px 15% 10px 4%;
+    color: rgb(0, 0, 0);
+    border-bottom: #d3d3d3 solid 1px;
+    overflow: hidden;
+}
+.InHeader > p{
+    font-weight: 600;
+}
+.InContent{
+    display: flex;
+    flex-direction: column;
+    height: 625px;
+    overflow-y: auto;
+}
+.InContent div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px 9% 10px 4%;
+    color: rgb(0, 0, 0);
+    border-bottom: #d3d3d3 solid 1px;
+}
+
+@media only screen and (min-width:992px){
+    .InvoiceBody{
+        width: 80%;
+        height: 70%;
+        margin-left:10% ;
+    }
+    .InList{
+        width: 100%;
+    }
+    .InvoiceHeader{
+        font-size: 48px;
+        padding-bottom: 20px;
+    }
+    .InvoiceHeader img{
+        width: 100px;
+    }
+}

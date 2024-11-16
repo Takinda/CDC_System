@@ -1,0 +1,135 @@
+.AddedPatients-Container {
+    background-color: #E1F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.AddedPatients-Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    font-size: 64px;
+    color: rgb(0, 0, 0);
+}
+
+.Add-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.Add-inputs input {
+    height: 50px;
+    width: 300px;
+    text-indent: 20px;
+    border-radius: 15px;
+    border: solid 2px black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Add-inputs button {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.Add-inputs button:hover {
+    background-color: #ecebeb;
+}
+
+.AddedPatients-List {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D1F3FA;
+    border: solid 2px #d3d3d3;
+    border-radius: 25px;
+    overflow: hidden;
+    max-height: 60vh;
+}
+
+.AddedPatients-List-Header {
+    display: flex;
+    border-bottom: #d3d3d3 solid 2px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #BAEBF2;
+    width: 100%;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px 10px 0 0;
+}
+
+.AddedPatients-List-Header p {
+    padding: 0 4%;
+}
+
+.AddedPatients-List-Body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.AddedPatients-List-Content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    min-height: 50px; /* Set a minimum height */
+    font-size: 20px;
+    border-bottom: solid 1px black;
+    color: rgb(0, 0, 0);
+}
+
+.AddedPatients-List-Content img {
+    width: 30px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.AddedPatients-List-Content img:hover{
+    cursor: pointer;
+}
+.AddedPatients-List-Content p{
+    padding-left: 20px;
+}
+.btns-List {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.AddedPatients-List-Content button {
+    width: 100px;
+    height: 25px;
+    margin-right: 30px;
+    background-color: #2acfb4;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.AddedPatients-List-Content button:hover{
+    background-color: #27bda4;
+}

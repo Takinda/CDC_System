@@ -1,0 +1,25 @@
+.role-box{
+    width: 180px;
+    height: 32px;
+    background-color: red;
+    border-radius: 12px;
+}
+
+.role-header{
+    cursor: pointer;
+    width: 100%;
+    background-color: #C5C5C5;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.role-box .icon{
+    position: absolute;
+    bottom: 55px;
+    left: 170px;
+    cursor: pointer;
+}
+#icon{
+    position: relative;
+}
+

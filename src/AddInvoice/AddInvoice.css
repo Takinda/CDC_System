@@ -1,0 +1,212 @@
+.invoice-container {
+  width: 100%;
+  height: 100vh; /* استخدام ارتفاع كامل النافذة */
+  background-color: #E1F4F4;
+  padding: 40px;
+  box-sizing: border-box;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  
+}
+
+.invoice-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  color: black;
+  margin-inline-start: 100px;
+}
+
+.invoice-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 100px;
+}
+
+.invoice-form {
+  
+  background-color: #B2E8F4;
+  width: 50%;
+  padding: 30px;
+  border-radius: 36px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+.form-group label {
+  font-size: 24px;
+  color: black;
+  width: 200px;
+  margin-right: 10px;
+  
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.diseases-group {
+  display: flex;
+  align-items: center;
+}
+
+.add-option-button {
+  margin-left: 10px;
+  padding: 5px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #eae7e7;
+
+  border-radius: 16px;
+}
+
+.invoice-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 410px;
+
+}
+
+.save-button, .print-button {
+  background-color: #BAEBF2;
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+  border-radius: 20px;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.save-button:hover, .print-button:hover {
+  background-color: #a2d9e2;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 350px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
+
+.close {
+  font-family: "Times New Roman", Times, serif;
+  align-self: flex-end;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.close:hover, .close:focus {
+  color: black;
+
+}
+
+.new-disease-input {
+  width: 70%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 16px;
+}
+
+.modal-add-button {
+  margin-top: 20px;
+  padding: 10px 50px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #BAEBF2;
+  border: none;
+  border-radius: 16px;
+}
+
+
+@media only screen and (min-width:992px){
+  .invoice-form{
+    height: 350px;
+  }
+  .invoice-form input{
+    height: 20px;
+  }
+  .header{
+    height: 30px;
+  }
+  .invoice-buttons{
+   margin-left: 200px; 
+   margin-top: 22px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .invoice-form{
+    height: 450px;
+  }
+  .invoice-form input{
+    height: 40px;
+  }
+  .header{
+    height: 100px;
+  }
+  .invoice-buttons{
+    margin-left: 200px; 
+    margin-top: 150px;
+  }
+}

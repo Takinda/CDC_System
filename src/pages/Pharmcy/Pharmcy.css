@@ -1,0 +1,89 @@
+.Main-Container {
+    background-color: #E1F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.Pharmacy-Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    color: rgb(0, 0, 0);
+}
+
+.Router-Container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 0 10%;
+    
+}
+
+.nav-btn {
+    color: white;
+    background-color: #25A2BE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.nav-btn.active {
+    opacity: 1;
+}
+
+.nav-btn:hover {
+    background-color: #1e849b;
+}
+
+.Table-Container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%; 
+	padding-top: 10px;
+
+}
+
+@media screen and (min-width: 992px) {
+    .Pharmacy-Header {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    .Pharmacy-Header img {
+        width: 150px;
+    }
+    .Router-Container{padding: 20px 0;}
+    .nav-btn {
+        font-size: 20px;
+        height: 40px;
+        width: 200px;
+    }
+    .Search-box2{
+        width: 200px;
+        height: 30px;
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+    .Pharmacy-Header {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    .Router-Container{padding: 50px 0;}
+    .Pharmacy-Header img {
+        width: 150px;
+    }
+    .nav-btn {
+        font-size: 24px;
+        height: 50px;
+        width: 250px;
+    }
+}

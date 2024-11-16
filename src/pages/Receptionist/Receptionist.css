@@ -1,0 +1,115 @@
+.Rec-Container{
+    background-color: #87D3E4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.Rec-Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    color: white;
+}
+.Rec-columns{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* space between rows */
+}
+.Rec-Rows{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20%; /* space between columns */
+}
+.Rec-Rows div{
+    position: relative;
+    background-color: #E1F4F4;
+    box-shadow: #0eabb9 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 25px;
+}
+.Links3{
+    width: 100%;
+}
+.Rec-Rows div button{
+    position: absolute;
+    bottom: 0;
+    background-color: #14d3e4;
+    border: none;
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+}
+.Rec-Rows div button:hover{
+    background-color: #14c4d4;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Laptops */
+
+@media screen and (min-width: 992px) {
+    .Rec-Header{
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 2%;
+    }
+    .Rec-Header img{    width: 200px;   }
+
+    .Rec-columns{
+        gap: 50px;
+    }
+
+    .Rec-Rows div{
+        width: 350px;
+        height: 170px;
+    }
+    .Rec-Rows img{
+        width: 100px;
+        padding-bottom: 10px;
+    }
+    .Rec-Rows div button{
+        font-size: 24px;
+        height: 40px;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1400px) {
+    .Rec-Header{
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 6%;
+    }
+    .Rec-Header img{    width: 220px;   }
+
+    .Rec-columns{
+        gap: 100px;
+    }
+
+    .Rec-Rows div{
+        width: 400px;
+        height: 200px;
+    }
+    .Rec-Rows img{
+        width: 120px;
+        padding-bottom: 10px;
+    }
+    .Rec-Rows div button{
+        font-size: 24px;
+        height: 40px;
+    }
+}

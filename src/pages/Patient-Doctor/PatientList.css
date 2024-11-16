@@ -1,0 +1,243 @@
+.Main {
+    background-color: #25A2BE;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .PageHeader{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    color: white;
+  }
+  .Doctor-Welcoming{ 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    color: white;
+  }
+  .Search{
+    display: flex;
+    position: relative;
+    width: 80%;
+    align-items: center;
+  }
+  .Sbar{
+    width: 250px;
+    text-indent: 15px;
+    border-radius: 20px;
+    border: none;
+
+    /*height: 50px;*/
+  }
+  .Sicon{
+    position: absolute;
+    left: 210px;
+  }
+  .ListContainer{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    background-color: #E1F4F4;
+    border-radius: 25px;
+    overflow-y:auto;
+  }
+  .ListTitle{
+    display: flex;
+    background-color: #14DADA;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px 25px 0 0;
+    border-bottom: 1px solid black;
+  }
+  .ListTitle p{
+    width: 150px;
+    text-align: center;
+  }
+  .ListRoom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+  .PatientN{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+  .PatientN:last-child{
+    border-bottom: none;
+  }
+  .PatientN:hover{
+    background-color: #d5e7e7;
+  }
+  .Doc-btns{
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+  }
+  .PatientN #Approve{
+    border: none;
+    background-color: #19C491;
+    border-radius: 10px;
+  }
+  .PatientN #Approve:hover{background-color: #16ac7f; cursor: pointer;}
+  
+  .PatientN #Dismiss{
+    border: none;
+    background-color: #aa5555;
+    border-radius: 10px;
+  }
+  .PatientN #Dismiss:hover{background-color: #8f4444; cursor: pointer;}
+  .Notification{
+    position: absolute;
+    color: #000;
+    top: 50%;
+    right: 2%;
+    width: 300px;
+    height: 230px;
+    background-color: #E1F4F4;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-right: 10px;
+    text-align: right;
+  }
+  .Bell{
+    cursor: pointer;
+  }
+  .Notification p{padding-right: 10px; padding-top: 10px;}
+  .exit-btn{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+  }
+.Number-Nots{
+  right: 40px;
+  top: 10px;
+  position: absolute;
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: rgb(177, 24, 24);
+  width: 25px;
+  padding: 4px 0;
+  text-align: center;
+  border-radius: 25px;
+}
+
+
+
+  /* Laptop */
+
+  @media  screen and (min-width: 992px) {
+    .PageHeader{
+      font-size: 24px;
+      padding-top: 10px;
+      padding-bottom: 1%;
+    }
+    .Doctor-img{
+      width: 100px;
+    }
+    .Doctor-Welcoming{
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    .Search{
+      height: 80px;
+    }
+    .Sbar{
+      height: 40px;
+      font-size: 20px;
+    }
+    .ListContainer{ height: 350px;}
+
+    .ListTitle{ height: 40px; font-size: 20px;}
+
+    .PatientN{ padding:5px 0; font-size: 16px;}
+    
+    .PatientN p{
+
+      width: 180px;
+      text-align: center;
+    }
+    
+    .Description{
+      text-indent: 0px;
+    }
+    .RoomN{
+      text-indent: 10px;
+    }
+    .ListRoom{ height: 309px; }
+
+    .PatientN button{ 
+      width: 80px;
+      height: 25px; 
+      font-size: 16px;
+    }
+  }
+
+  /* Desktop */
+
+  @media  screen and (min-width: 1400px) {
+    .PageHeader{
+      font-size: 30px;
+      padding-top: 10px;
+      padding-bottom: 2%;
+    }
+    .Doctor-img{
+      width: 80px;
+    }
+    .Doctor-Welcoming{
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    .Search{
+      height: 80px;
+    }
+    .Sbar{
+      height: 40px;
+      font-size: 20px;
+    }
+    .ListContainer{ height: 600px;}
+
+    .ListTitle{ height: 50px; font-size: 24px;}
+
+    .PatientN{ padding:10px 0; font-size: 20px;}
+    
+    .PatientN p{
+
+      width: 180px;
+      text-align: center;
+    }
+    
+    .Description{
+      text-indent: -60px;
+    }
+    .RoomN{
+      text-indent: -80px;
+    }
+    .ListRoom{ height: 550px;}
+
+    .PatientN button{ 
+      width: 100px;
+      height: 30px; 
+      font-size: 20px;
+    }
+
+  }
